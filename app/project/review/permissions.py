@@ -18,4 +18,3 @@ class AllowedToLikePost(BasePermission):
     def has_object_permission(self, request, view, obj):
         # Make sure that the current user is not the object(post) owner (One cann't like her own post)
         return request.user != obj.user
-    
