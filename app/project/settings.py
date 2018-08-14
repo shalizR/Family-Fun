@@ -25,7 +25,12 @@ SECRET_KEY = '+*n=6#y+h&07#4wf7z6$v$#z#e3=_!ne*)wa&$609gfu6-m_!j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '0.0.0.0',
+    '127.0.0.1',
+    'family-fun.propulsion-learn.ch',
+]
 
 
 # Application definition
@@ -37,6 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'project',
+
 ]
 
 MIDDLEWARE = [
