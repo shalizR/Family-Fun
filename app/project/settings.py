@@ -45,7 +45,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'project',
-
+    'project.restaurant',
+    'project.review',
+    'project.opinion',
+    'project.email',
+    'project.api_auth',
+    'project.user_profile',
+    'project.home',
+    'project.search',
 ]
 
 MIDDLEWARE = [
