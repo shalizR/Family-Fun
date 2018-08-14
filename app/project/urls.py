@@ -28,4 +28,3 @@ if settings.DEBUG:
 urlpatterns = [
     path('backend/', include(base_patterns))
 ]
-
