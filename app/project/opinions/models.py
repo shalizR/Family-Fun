@@ -16,17 +16,15 @@ class Opinion(models.Model):
         on_delete=models.CASCADE,
         related_name='opinions',
     )
-    date_created = models.DateTimeField(
-        verbose_name='date_created',
-        null=True,
+    helpful = models.NullBooleanField(
+        verbose_name='helpful',
+        default=False,
     )
-    date_modified = models.DateTimeField(
-        verbose_name='date_modified',
-        null=True,
+    awesome = models.NullBooleanField(
+        verbose_name='awesome',
+        default=False,
     )
-
-    class Meta:
-        ordering = ['-date_created']
-
-    def __str__(self):
-        return self.date_created
+    random = models.NullBooleanField(
+        verbose_name='random',
+        default=False,
+    )

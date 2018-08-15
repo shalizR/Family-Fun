@@ -17,9 +17,18 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
+from rest_framework.documentation import include_docs_urls
 
 base_patterns = [
     path('admin/', admin.site.urls),
+    path('api/auth/', include('project.api_auth.urls', namespace='api_auth')),
+    path('api/reviews/', include('project.review.urls', namespace='reviews')),
+    # path('api/restaurants/', include('project.restaurant.urls', namespace='api_restaurant')),
+    # path('api/home/', include('project.home.urls', namespace='home')),
+    # path('api/search/', include('project.search.urls', namespace='search')),
+    path('api/opinions/', include('project.opinions.urls', namespace='opinions')),
+    # path('docs/', include_docs_urls(title='Luna', public=True)),
+    # path('api/users/', include('project.user_profile.urls', namespace='api')),
 ]
 
 if settings.DEBUG:

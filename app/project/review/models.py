@@ -34,6 +34,15 @@ class Review(models.Model):
         related_name='reviews',
         to='restaurant.Restaurant',
     )
+    has_changing_table = models.NullBooleanField(
+        verbose_name='has_changing_table',
+    )
+    place_for_stroller = models.NullBooleanField(
+        verbose_name='place_for_stroller',
+    )
+    isNoisy = models.NullBooleanField(
+        verbose_name='isNoisy',
+    )
     friendly_waiting_staff = models.NullBooleanField(
         verbose_name='friendly_waiting_staff',
     )
