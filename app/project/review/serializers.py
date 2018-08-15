@@ -4,7 +4,6 @@ from ..review.models import Review
 from ..user_profile.serializers import UserSerializer
 
 
-
 class ReviewSerializer(serializers.ModelSerializer):
 
     user = UserSerializer(
