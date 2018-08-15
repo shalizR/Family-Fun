@@ -12,5 +12,3 @@ urlpatterns = [
     # path('reviews/helpful/', ListAwesomeOpinionView.as_view(), name='awesomes'),
     # path('reviews/helpful/', ListRandomOpinionView.as_view(), name='randoms'),
 ]
-
-

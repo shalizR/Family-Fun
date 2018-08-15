@@ -17,7 +17,6 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
-from rest_framework.documentation import include_docs_urls
 
 base_patterns = [
     path('admin/', admin.site.urls),
@@ -37,3 +36,4 @@ if settings.DEBUG:
 urlpatterns = [
     path('backend/', include(base_patterns))
 ]
+
