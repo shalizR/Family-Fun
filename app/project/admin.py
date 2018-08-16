@@ -20,7 +20,7 @@ class ReviewAdmin(admin.ModelAdmin):
 
 @admin.register(Restaurant)
 class RestaurantAdmin(admin.ModelAdmin):
-    list_display = ['id', 'name', 'user']
+    list_display = ['id', 'name', 'user', 'category', 'kids_menu']
     search_fields = ['name']
 
 
@@ -31,5 +31,5 @@ class RelationshipAdmin(admin.ModelAdmin):
 
 @admin.register(Opinion)
 class CommentAdmin(admin.ModelAdmin):
-    list_display = ['id', 'user', 'review']
+    list_display = ['id', 'user', 'review', 'helpful', 'awesome', 'random']
     # search_fields = ['content']

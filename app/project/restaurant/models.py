@@ -65,12 +65,15 @@ class Restaurant(models.Model):
     )
     credit_card = models.NullBooleanField(
         verbose_name='credit_card',
+        default=False,
     )
     take_reservation = models.NullBooleanField(
         verbose_name='take_reservation',
+        default=False,
     )
     kids_menu = models.NullBooleanField(
         verbose_name='kids_menu',
+        default=False,
     )
     user = models.ForeignKey(
         verbose_name='user',
