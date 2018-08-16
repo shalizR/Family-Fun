@@ -1,11 +1,10 @@
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework.generics import ListAPIView
 
 from ..review.permissions import AllowedToMakeOpinion
 from .models import Opinion
-from .serializer import OpinionSerializer
+# from .serializer import OpinionSerializer
 
 
 class GetCreateHelpfulOpinionView(APIView):
@@ -71,7 +70,6 @@ class GetCreateRandomOpinionView(APIView):
         except Opinion.DoesNotExist:
             print('The review is not exist!')
 
-
 # class ListHelpfulOpinionView(ListAPIView): (Move to review view)
 #     """
 #             Get the list of the helpful opinion for a single review
@@ -82,4 +80,3 @@ class GetCreateRandomOpinionView(APIView):
 #         opinions = Opinion.objects.filter(review=pk)
 #         response = self.serializer_class(reviews, many=True).data
 #         return Response(response)
-
