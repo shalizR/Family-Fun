@@ -2,7 +2,7 @@ from django.urls import path
 
 from .views import CreateReviewView, GetReviewListView, GetUserReviewListView, GetUpdateDeleteReviewView
 
-app_name = 'review'  # backend/api/review/
+app_name = 'review'  # backend/api/reviews/
 
 urlpatterns = [
     path('new/<int:pk>/', CreateReviewView.as_view(), name='new_review'),

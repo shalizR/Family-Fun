@@ -75,3 +75,29 @@ class ListRestaurantsByUser(ListAPIView):
 
     def get_queryset(self):
         return Restaurant.objects.filter(user=self.kwargs['user_id'])
+
+
+class ListRestaurantsWithKidsMenuView(generics.GenericAPIView):
+    """
+        Lists all restaurants with kids menu
+    """
+    serializer_class = RestaurantSerializer
+    queryset = Restaurant.objects.all()
+
+    def get(self, request, **kwargs):
+        restaurants = Restaurant.objects.filter(kids_menu=True)
+        response = self.serializer_class(restaurants, many=True).data
+        return Response(response)
+
+
+class ListRestaurantsWithReservation(generics.GenericAPIView):
+    """
+        Lists all restaurants with reservation
+    """
+    serializer_class = RestaurantSerializer
+    queryset = Restaurant.objects.all()
+
+    def get(self, request, **kwargs):
+        restaurants = Restaurant.objects.filter(take_reservation=True)
+        response = self.serializer_class(restaurants, many=True).data
+        return Response(response)

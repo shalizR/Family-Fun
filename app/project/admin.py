@@ -20,7 +20,7 @@ class ReviewAdmin(admin.ModelAdmin):
 
 @admin.register(Restaurant)
 class RestaurantAdmin(admin.ModelAdmin):
-    list_display = ['id', 'name', 'user', 'category', 'kids_menu']
+    list_display = ['id', 'name', 'user', 'category', 'kids_menu', 'take_reservation']
     search_fields = ['name']
 
 

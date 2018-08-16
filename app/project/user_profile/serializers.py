@@ -13,30 +13,26 @@ class UpdateUserProfileSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = UserProfile
-        fields = ['username', 'things_i_love', 'location', 'phone', 'joined_date', 'profile_pic']
+        fields = ['username', 'location', 'phone', 'joined_date', 'profile_pic']
         read_only_fields = ['username']
 
-    def update(self, instance, validated_data):
-        instance.things_i_love = validated_data.get('things_i_love', instance.things_i_love)
-        instance.save()
-        return instance
+    # def update(self, instance, validated_data):
+    #     instance.things_i_love = validated_data.get('things_i_love', instance.things_i_love)
+    #     instance.save()
+    #     return instance
 
 
 class UserSerializer(serializers.ModelSerializer):
 
     location = serializers.SerializerMethodField()
     phone = serializers.SerializerMethodField()
-    things_i_love = serializers.SerializerMethodField()
     joined_date = serializers.SerializerMethodField()
     profile_pic = serializers.SerializerMethodField()
 
     class Meta:
         model = User
-        fields = ['id', 'username', 'things_i_love', 'location', 'phone', 'joined_date', 'profile_pic']
+        fields = ['id', 'username', 'location', 'phone', 'joined_date', 'profile_pic']
         read_only_fields = fields
-
-    # def get_things_i_love(self, user):
-    #     return user.user_profile.things_i_love
 
     def get_location(self, user):
         return user.user_profile.location
