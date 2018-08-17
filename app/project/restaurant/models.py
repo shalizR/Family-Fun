@@ -53,7 +53,7 @@ class Restaurant(models.Model):
         blank=True,
         null=True,
     )
-    opening_hours = models.DateTimeField(
+    opening_hours = models.TextField(
         verbose_name='opening_hours',
         null=True,
     )
