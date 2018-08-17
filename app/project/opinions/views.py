@@ -1,7 +1,9 @@
+from rest_framework.exceptions import NotFound
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
+# from ..review.models import Review
 from ..review.permissions import AllowedToMakeOpinion
 from .models import Opinion
 # from .serializer import OpinionSerializer
@@ -19,22 +21,10 @@ class GetCreateHelpfulOpinionView(APIView):
         try:
             opinion = Opinion.objects.get(review=pk)
             opinion.helpful = not opinion.helpful
-            # something = opinion.helpful
-            # serializer = OpinionSerializer(data={"helpful": something})
-            # if serializer.is_valid():
             opinion.save()
-            return Response('OK')
         except Opinion.DoesNotExist:
-            print('The review is not exist!')
-    # serializer_class = OpinionSerializer
-    # def get(self, request, pk, **kwargs):
-    #     opinion = Opinion.objects.get(review=pk)
-    #     opinion.helpful = not opinion.helpful
-    #     response = self.serializer_class(posts, many=True).data
-    #     return Response(response)
-    # def post(self, request, **kwargs):
-    #     helpful, created = Opinion.objects.get_or_create(review=request.user)
-    #     helpful = not helpful
+            raise NotFound
+        return Response('OK')
 
 
 class GetCreateAwesomeOpinionView(APIView):
@@ -49,9 +39,9 @@ class GetCreateAwesomeOpinionView(APIView):
             opinion = Opinion.objects.get(review=pk)
             opinion.awesome = not opinion.awesome
             opinion.save()
-            return Response('OK')
         except Opinion.DoesNotExist:
-            print('The review is not exist!')
+            raise NotFound
+        return Response('OK')
 
 
 class GetCreateRandomOpinionView(APIView):
@@ -66,17 +56,17 @@ class GetCreateRandomOpinionView(APIView):
             opinion = Opinion.objects.get(review=pk)
             opinion.random = not opinion.random
             opinion.save()
-            return Response('OK')
         except Opinion.DoesNotExist:
-            print('The review is not exist!')
+            raise NotFound
+        return Response('OK')
 
-# class ListHelpfulOpinionView(ListAPIView): (Move to review view)
+# class GetHelpfulOpinionsListView(ListAPIView):
 #     """
-#             Get the list of the helpful opinion for a single review
+#             Get the list of all helpful opinions on a single review
 #     """
 #     serializer_class = OpinionSerializer
 #
-#     def get(self, request, pk, **kwargs):
-#         opinions = Opinion.objects.filter(review=pk)
-#         response = self.serializer_class(reviews, many=True).data
+#     def get(self, request, review_id, **kwargs):
+#         opinions = Opinion.objects.filter(review=review_id, helpful=True)
+#         response = self.serializer_class(opinions, many=True).data
 #         return Response(response)

@@ -16,10 +16,10 @@ class UpdateUserProfileSerializer(serializers.ModelSerializer):
         fields = ['username', 'location', 'phone', 'joined_date', 'profile_pic']
         read_only_fields = ['username']
 
-    # def update(self, instance, validated_data):
-    #     instance.things_i_love = validated_data.get('things_i_love', instance.things_i_love)
-    #     instance.save()
-    #     return instance
+    def update(self, instance, validated_data):
+        instance.phone = validated_data.get('phone', instance.phone)
+        instance.save()
+        return instance
 
 
 class UserSerializer(serializers.ModelSerializer):

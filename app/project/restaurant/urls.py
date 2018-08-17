@@ -16,4 +16,5 @@ urlpatterns = [
     path('user/<int:user_id>/', ListRestaurantsByUser.as_view(), name='list_restaurants_created_by_user'),
     path('kids_menu/', ListRestaurantsWithKidsMenuView.as_view(), name='list_restaurants_with_kidsMenu'),
     path('take_reservation/', ListRestaurantsWithReservation.as_view(), name='list_restaurants_with_reservation'),
+
 ]

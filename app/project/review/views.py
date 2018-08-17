@@ -1,5 +1,5 @@
 from rest_framework import status
-from rest_framework.generics import GenericAPIView, RetrieveUpdateDestroyAPIView
+from rest_framework.generics import GenericAPIView, RetrieveUpdateDestroyAPIView, ListAPIView
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -52,7 +52,7 @@ class GetUserReviewListView(APIView):
 
 class GetUpdateDeleteReviewView(RetrieveUpdateDestroyAPIView):
     """
-            Get, Delete, Update a review by id (only by owner)
+            Get, Delete, Update a review on restaurant by id (only by owner)
     """
 
     serializer_class = ReviewSerializer
@@ -62,6 +62,28 @@ class GetUpdateDeleteReviewView(RetrieveUpdateDestroyAPIView):
         IsOwnerOrReadOnly,
     ]
 
+
+class ListReviewsGetOpinionByCurrentUserView(ListAPIView):
+    """
+             List of all reviews get opinion by current user
+    """
+
+    queryset = Review.objects.all()
+    serializer_class = ReviewSerializer
+
+    def get_queryset(self):
+        return self.queryset.filter(opinions__user=self.request.user)
+
+# class ListHelpfulReviewsView(ListAPIView):
+#     """
+#              List of helpful review's on a specific restaurant
+#     """
+#
+#     queryset = Review.objects.all()
+#     serializer_class = ReviewSerializer
+#
+#     def get_queryset(self):
+#         return self.queryset.filter(opinions__reviews='helpful')
 
 # class CreateDeleteOpinionView(GenericAPIView):
 #     """
@@ -108,13 +130,4 @@ class GetUpdateDeleteReviewView(RetrieveUpdateDestroyAPIView):
 #         return self.queryset.filter(likes__user=self.request.user)
 #
 #
-# class ListCommentedReviewsdView(ListAPIView):
-#     """
-#              List of review's commented by authenticated user
-#     """
-#
-#     queryset = Review.objects.all()
-#     serializer_class = ReviewSerializer
-#
-#     def get_queryset(self):
-#         return self.queryset.filter(comments__user=self.request.user)
+
