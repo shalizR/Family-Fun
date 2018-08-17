@@ -128,6 +128,3 @@ class ListReviewsGetOpinionByCurrentUserView(ListAPIView):
 #
 #     def get_queryset(self):
 #         return self.queryset.filter(likes__user=self.request.user)
-#
-#
-
