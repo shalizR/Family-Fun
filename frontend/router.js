@@ -1,12 +1,12 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-import Home from './components/Home.vue';
-import Login from './components/Login.vue';
-import Validation from './components/Validation';
+import Vue from 'vue'
+import Router from 'vue-router'
+import Home from './components/Home.vue'
 
-Vue.use(Router);
+Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
+  base: process.env.BASE_URL,
   routes: [
     // {
     //   path: '/restaurants/:id/',
@@ -28,20 +28,21 @@ export default new Router({
     //   name: 'profile',
     //   component: Profile
     // },
-    {
-      path: '/login',
-      name: 'login',
-      component: Login
-    },
+    // {
+    //   path: '/login',
+    //   name: 'login',
+    //   component: Login
+    // },
     // {
     //   path: '/footer',
     //   name: 'footer',
     //   component: Footer
     // },
-    {
-      path: '/validation',
-      name: 'validation',
-      component: Validation
-    }
+    // {
+    //   path: '/validation',
+    //   name: 'validation',
+    //   component: Validation
+    // }
+
   ]
-});
+})
