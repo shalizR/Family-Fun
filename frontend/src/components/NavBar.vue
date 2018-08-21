@@ -1,5 +1,4 @@
 // TODO: Show Login / Sign up / Logout Button depending on user logged in status
-import { mapState } from 'vuex';
 
 <template>
 <nav class="navbar is-white" role="navigation">
