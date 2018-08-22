@@ -22,8 +22,8 @@ const login = {
         fetchToken: function ({commit}, credentials) {
             console.log(credentials)
             return Vue.http.post('api/auth/token/', credentials).then(response => {
-                console.log(response.body.access)
-                console.log(response.body.refresh)
+                // console.log(response.body.access)
+                // console.log(response.body.refresh)
                 localStorage.setItem('accessToken', response.body.access)
                 localStorage.setItem('refreshToken', response.body.refresh)
             }, response => {

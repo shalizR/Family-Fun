@@ -5,7 +5,7 @@ from django.db import models
 class Restaurant(models.Model):
     CATEGORIES = [
         ('restaurant', 'Restaurant'),
-        ('fast_food', 'Fast_Food'),
+        ('fast_food', 'Fast Food'),
         ('cafe', 'Cafe'),
     ]
     name = models.CharField(

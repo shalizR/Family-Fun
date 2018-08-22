@@ -40,7 +40,7 @@ class RestaurantCategoriesListView(APIView):
     serializer_class = RestaurantCategroySerializer
 
     def get(self, request, *args, **kwargs):
-        categories = map(lambda x: {'name': x[1]}, Restaurant.CATEGORIES)
+        categories = map(lambda x: {'name': x[1], 'key': x[0]}, Restaurant.CATEGORIES)
         return Response(self.serializer_class(categories, many=True).data)
 
 

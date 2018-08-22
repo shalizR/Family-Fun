@@ -54,3 +54,4 @@ class RestaurantSerializer(serializers.ModelSerializer):
 
 class RestaurantCategroySerializer(serializers.Serializer):
     name = serializers.CharField()
+    key = serializers.CharField()

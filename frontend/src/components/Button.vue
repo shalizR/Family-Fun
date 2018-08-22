@@ -1,19 +1,19 @@
 <template>
-  <button @click="$emit('click')" class="button is-rounded is-large">
+  <button @click="$emit('click')" class="button">
     <slot></slot>
   </button>
 </template>
 
 <script>
 export default {
-  name: 'Button'
+  name: 'Button',
 }
 </script>
 
 <style scoped>
   .button {
     background-color: white;
-    border-color: black;
+    /*border-color: white;*/
     color: black;
   }
 </style>

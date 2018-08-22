@@ -14,13 +14,13 @@
         </div>
         <div class="columns">
             <div class="column is-3 is-offset-3">
-                <input required class="input  is-medium" type="text" placeholder="Username" v-model="username">
+                <input required class="input" type="text" placeholder="Username" v-model="username">
                 <div class="errors" v-if="errors.username">
                     {{errors.username[0]}}
                 </div>
             </div>
             <div class="column is-3">
-                <input required class="input  is-medium" type="password" placeholder="Password" v-model="password">
+                <input required class="input " type="password" placeholder="Password" v-model="password">
                 <div class="errors" v-if="errors.password">
                     {{errors.password[0]}}
                 </div>

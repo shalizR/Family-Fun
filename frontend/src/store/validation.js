@@ -1,5 +1,3 @@
-import Vue from "vue";
-
 const validation = {
     namespaced: true,
 
@@ -28,8 +26,6 @@ const validation = {
                 'Accept': 'application/json'
             })
 
-            // console.log(credentials.email, credentials.username, credentials.password, credentials.code, credentials.location)
-
             const config = {
                 method: 'POST',
                 headers: myHeader,
@@ -51,20 +47,3 @@ const validation = {
 }
 
 export default validation
-
-//     actions: {
-//         fetchToken: function ({commit}, credentials) {
-//             console.log(credentials)
-//             return Vue.http.post('api/auth/token/', credentials).then(response => {
-//                 console.log(response.body.access)
-//                 console.log(response.body.refresh)
-//                 localStorage.setItem('accessToken', response.body.access)
-//                 localStorage.setItem('refreshToken', response.body.refresh)
-//             }, response => {
-//                 console.log("here", response)
-//                 commit('setErrors', response.body)
-//             });
-//         }
-//     }
-// }
-//

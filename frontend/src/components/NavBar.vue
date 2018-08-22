@@ -1,10 +1,10 @@
 // TODO: Show Login / Sign up / Logout Button depending on user logged in status
 
 <template>
-<nav class="navbar is-white" role="navigation">
+<nav class="navbar is-primary" role="navigation">
     <div class="navbar-start">
       <figure class="navbar-item image">
-        <img src="../assets/family_fun_re.jpg">
+        <img src="../assets/family_fun_small.png" width="112" height="28" alt="Family-fun logo">
       </figure>
     </div>
     <div class="navbar-end">
@@ -21,8 +21,12 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
+import Search from './Search.vue'
 
 export default {
+    components: {
+        Search,
+    },
   computed: {
     ...mapState('navbar', [
       'logged_in'
@@ -55,4 +59,7 @@ export default {
 
 <style lang="scss">
 @import "~bulma";
+    .nav-color {
+        background-color: yellow;
+    }
 </style>

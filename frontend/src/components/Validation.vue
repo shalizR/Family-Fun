@@ -11,7 +11,6 @@
       </div>
       <div class="column is-3">
         <input required class="input is-medium" type="text" placeholder="Validation code" v-model="code">
-
       </div>
     </div>
     <div class="columns">
