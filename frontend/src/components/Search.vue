@@ -4,7 +4,8 @@
       <div class="column is-3">
         <div class="select">
           <select v-model="category" >
-            <option v-for="category in categories" :value="category.key" v-bind:key="category.key">
+            <option value="" disabled>Choose one...</option>
+            <option v-for="category in categories" :value="category.key" v-bind:key="category.key" @click="renderCategory(category.name)">
               {{ category.name }}
             </option>
           </select>
@@ -46,6 +47,7 @@ export default {
       this.fetchRestaurants({
           search_text: this.search_text,
       })
+      this.fetchRestaurants({ search_text: this.search_text, category: 'restaurant' });
   },
   computed: {
     ...mapState('search', [
@@ -65,6 +67,10 @@ export default {
       'fetchRestaurants',
       'fetchRestaurantCategories',
     ]),
+      renderCategory(categoryName) {
+        console.log('Clicked!')
+        this.fetchRestaurants({ category: categoryName });
+      }
   },
 };
 </script>

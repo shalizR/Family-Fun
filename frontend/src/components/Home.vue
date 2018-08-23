@@ -19,7 +19,10 @@
     import Search from "./Search";
 
     export default {
-        components: {Search, RestaurantCard},
+        components: {
+            Search,
+            RestaurantCard},
+
         computed: {
             ...mapState('search', [
                 'restaurants',

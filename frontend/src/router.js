@@ -3,16 +3,18 @@ import Router from 'vue-router';
 import Home from './components/Home.vue';
 import Login from './components/Login.vue';
 import Validation from './components/Validation';
+import RestaurantDetail from './components/RestaurantDetail';
 
-Vue.use(Router);
+Vue.use(Router); //it's global like this
 
 export default new Router({
   routes: [
-    // {
-    //   path: '/restaurants/:id/',
-    //   name: 'RestaurantDetail',
-    //   component: RestaurantDetail
-    // },
+    {
+      path: '/restaurants/:id/',
+      name: 'RestaurantDetail',
+        props:true,
+      component: RestaurantDetail
+    },
     {
       path: '/',
       name: 'home',

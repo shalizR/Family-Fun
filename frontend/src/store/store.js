@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-// import restaurantDetail from './restaurantDetail';
 import login from './login';
 import search from './search';
 import navbar from './navbar';
 import validation from './validation';
 import home from './home';
+import restaurantDetail from './restaurantDetail'
 
 Vue.use(Vuex)
 
@@ -17,5 +17,6 @@ modules: {
     navbar,
     validation,
     home,
+    restaurantDetail,
 },
 });
