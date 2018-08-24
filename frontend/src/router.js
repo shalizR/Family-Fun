@@ -44,6 +44,12 @@ export default new Router({
       path: '/validation',
       name: 'validation',
       component: Validation
-    }
+    },
+    // {
+    //     path: '/newreview',
+    //     name: 'NewReview',
+    //     component: NewReview
+    // }
+
   ]
 });

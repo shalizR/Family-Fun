@@ -39,6 +39,20 @@
 import moment from 'moment'
 
 export default {
+
+    data() {
+        return {
+            high_chair: false,
+            are_there_steps: false,
+            has_changing_table: false,
+            place_for_stroller: false,
+            isNoisy: false,
+            friendly_waiting_staff: false,
+            has_tablecloth: false,
+            has_quick_service: false,
+
+        }
+    },
   props: {
     review: {
         type: Object,

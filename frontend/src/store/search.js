@@ -12,21 +12,19 @@ const search = {
             state.restaurants = payload
         },
         setFetchedRestaurantCategories(state, payload) {
-          console.log(payload)
+          console.log('category payload',payload)
             state.categories = payload
         }
     },
+
     actions: {
         fetchRestaurantCategories(context) {
-            if (!localStorage.getItem('accessToken')) {
-                return
-            }
-            const parsedToken = localStorage.getItem('accessToken')
+            const token = localStorage.getItem('accessToken')
             const myHeader = new Headers({
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${parsedToken}`,
+                Authorization: `Bearer ${token}`,
             })
 
+            console.log('token from categories', token)
             const config = {
                 method: 'GET',
                 headers: myHeader
@@ -34,10 +32,10 @@ const search = {
 
             fetch('http://localhost:8000/backend/api/restaurants/categories/', config)
                 .then(response => {
-                    console.log(response)
                     return response.json()
                 })
                 .then(data => {
+
                     context.commit('setFetchedRestaurantCategories', data)
                 })
         },
@@ -46,10 +44,10 @@ const search = {
                 console.log('no token')
                 return
             }
-            const parsedToken = localStorage.getItem('accessToken')
+            const token = localStorage.getItem('accessToken')
 
             const myHeader = new Headers({
-                'Authorization': `Bearer ${parsedToken}`,
+                Authorization: `Bearer ${token}`,
                 'Content-Type': 'application/json'
             })
 
@@ -57,11 +55,12 @@ const search = {
                 method: 'post',
                 headers: myHeader,
             }
-            fetch(`http://localhost:8000/backend/api/search/${searchSettings.category}/?search_string=${searchSettings.search_text}`, config)
+           fetch(`http://localhost:8000/backend/api/search/${searchSettings.category}/?search_string=${searchSettings.search_text}`, config)
                 .then(response => {
                     return response.json()
                 })
                 .then(data => {
+                    console.log('data for restaurant category', data)
                         let restaurants = []
                         for (let restaurant of data) {
                             restaurants.push(restaurant)

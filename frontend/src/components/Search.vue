@@ -3,9 +3,9 @@
     <div class="columns">
       <div class="column is-3">
         <div class="select">
-          <select v-model="category" >
+          <select v-model="category" v-on:click="renderCategory(category)">
             <option value="" disabled>Choose one...</option>
-            <option v-for="category in categories" :value="category.key" v-bind:key="category.key" @click="renderCategory(category.name)">
+            <option v-for="category in categories" :value="category.key" v-bind:key="category.key">
               {{ category.name }}
             </option>
           </select>
@@ -29,6 +29,7 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
+// import RestaurantDetail from './RestaurantDetail'
 
 export default {
   name: 'Search',
@@ -39,9 +40,12 @@ export default {
     }
   },
   components: {
+    // RestaurantDetail,
   },
   mounted () {
       this.$store.dispatch('search/fetchRestaurantCategories').then(data => {
+          console.log('data from dispatch', data)
+          console.log('this.categories', this.categories)
           this.category = this.categories[0].key
       })
       this.fetchRestaurants({
@@ -60,17 +64,17 @@ export default {
     },
   },
   methods: {
-    setSelectedSearch() {
+    setSelectedSearch: function() {
       this.fetchRestaurants({ search_text: this.search_text, category: this.category });
+    },
+    renderCategory: function (categoryName) {
+        console.log('Clicked!')
+        this.fetchRestaurants({category: categoryName});
     },
     ...mapActions('search', [
       'fetchRestaurants',
       'fetchRestaurantCategories',
     ]),
-      renderCategory(categoryName) {
-        console.log('Clicked!')
-        this.fetchRestaurants({ category: categoryName });
-      }
   },
 };
 </script>
