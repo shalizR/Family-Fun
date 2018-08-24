@@ -35,9 +35,10 @@ const search = {
                     return response.json()
                 })
                 .then(data => {
-
                     context.commit('setFetchedRestaurantCategories', data)
                 })
+
+
         },
         fetchRestaurants(context, searchSettings) {
             if (!localStorage.getItem('accessToken')) {

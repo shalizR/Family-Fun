@@ -14,7 +14,7 @@
 
 <script>
     import RestaurantCard from './RestaurantCard'
-    import {mapState, mapActions} from 'vuex'
+    import {mapState} from 'vuex'
     import search from './Search.vue'
     import Search from "./Search";
 

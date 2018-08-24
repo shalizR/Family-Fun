@@ -43,16 +43,15 @@ export default {
     // RestaurantDetail,
   },
   mounted () {
-      this.$store.dispatch('search/fetchRestaurantCategories').then(data => {
-          console.log('data from dispatch', data)
-          console.log('this.categories', this.categories)
-          this.category = this.categories[0].key
-      })
-      this.fetchRestaurants({
-          search_text: this.search_text,
-      })
+      this.$store.dispatch('search/fetchRestaurantCategories')
+      console.log('this.categories[0]', this.categories[0])
+
+      this.category = this.categories
       this.fetchRestaurants({ search_text: this.search_text, category: 'restaurant' });
   },
+    updated () {
+      console.log('this.categories[0]', this.category)
+    },
   computed: {
     ...mapState('search', [
       'restaurants',
@@ -68,8 +67,9 @@ export default {
       this.fetchRestaurants({ search_text: this.search_text, category: this.category });
     },
     renderCategory: function (categoryName) {
-        console.log('Clicked!')
-        this.fetchRestaurants({category: categoryName});
+        console.log('Clicked!', categoryName)
+        this.category = categoryName
+        this.fetchRestaurants({search_text: '', category: categoryName});
     },
     ...mapActions('search', [
       'fetchRestaurants',
