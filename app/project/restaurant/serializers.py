@@ -25,6 +25,7 @@ class RestaurantSerializer(serializers.ModelSerializer):
             'user',
             'rating',
             'kids_menu',
+            'opening_hours',
             # 'number_of_reviews',
         ]
         read_only_fields = ['id', 'user']

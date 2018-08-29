@@ -5,6 +5,7 @@ import search from './search';
 import navbar from './navbar';
 import validation from './validation';
 import home from './home';
+import opinion from './opinion';
 import restaurantDetail from './restaurantDetail'
 
 Vue.use(Vuex)
@@ -18,5 +19,6 @@ modules: {
     validation,
     home,
     restaurantDetail,
+    opinion,
 },
 });

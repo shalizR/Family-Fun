@@ -1,7 +1,7 @@
 // TODO: Show Login / Sign up / Logout Button depending on user logged in status
 
 <template>
-<nav class="navbar is-primary" role="navigation">
+<nav class="navbar nav-color" role="navigation">
     <div class="navbar-start">
       <figure class="navbar-item image">
         <img src="../assets/family_fun_small.png" width="112" height="28" alt="Family-fun logo">
@@ -57,9 +57,12 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "~bulma";
     .nav-color {
-        background-color: yellow;
+        background-color: #e28a2b;
+    }
+    .navbar {
+        margin-bottom: 25px;
     }
 </style>

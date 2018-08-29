@@ -1,8 +1,5 @@
 <template>
     <div class="container">
-        <div>
-            Hello!!!!!!
-        </div>
         <Search/>
         <div class='columns is-multiline is-centered'>
             <div class="column is-4" v-for="restaurant in restaurants" v-bind:key="restaurant.id">
@@ -35,6 +32,6 @@
 </script>
 
 <style scoped>
-    @import "../../node_modules/bulma";
+    @import "~bulma";
 
 </style>

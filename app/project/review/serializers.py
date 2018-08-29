@@ -1,6 +1,7 @@
 from rest_framework import serializers
 
 # from ..restaurant.serializers import RestaurantSerializer
+from project.opinions.serializer import OpinionSerializer
 from ..review.models import Review
 from ..user_profile.serializers import UserSerializer
 
@@ -10,9 +11,10 @@ class ReviewSerializer(serializers.ModelSerializer):
     user = UserSerializer(
         required=False,
     )
-    # restaurant = RestaurantSerializer(
-    #     required=True,
-    # )
+    opinions = OpinionSerializer(
+        required=False,
+        many=True,
+    )
 
     class Meta:
         model = Review
@@ -33,12 +35,13 @@ class ReviewSerializer(serializers.ModelSerializer):
             'has_tablecloth',
             'has_quick_service',
             'price_level',
+            'opinions',
         ]
         read_only_fields = [
             'id',
             'date_created',
             'date_modified',
-            'user',
+            # 'user',
         ]
 
     # def get_likes_count(self, post):

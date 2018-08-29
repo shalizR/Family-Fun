@@ -12,8 +12,8 @@ export default {
 
 <style scoped>
   .button {
-    background-color: white;
-    /*border-color: white;*/
-    color: black;
+    background-color: #e28a2b;
+    border-color: #e28a2b;
+    color: white;
   }
 </style>

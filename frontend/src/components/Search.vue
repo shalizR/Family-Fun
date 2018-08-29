@@ -1,35 +1,26 @@
 <template>
   <div class="container">
-    <div class="columns">
-      <div class="column is-3">
-        <div class="select">
-          <select v-model="category" v-on:click="renderCategory(category)">
-            <option value="" disabled>Choose one...</option>
-            <option v-for="category in categories" :value="category.key" v-bind:key="category.key">
-              {{ category.name }}
-            </option>
-          </select>
-        </div>
-      </div>
-      <div class="column is-6">
-        <div class="control search-control">
-          <input class="input" type="text" v-bind:placeholder="'Find ' + category"
-                 v-model="search_text">
-        </div>
-      </div>
-      <div class="column is-3">
-        <div>
-          <lu-button @click="setSelectedSearch">Search</lu-button>
-        </div>
-
-      </div>
+    <div class="select">
+      <select v-model="category" v-on:click="renderCategory(category)">
+        <option value="" disabled>Choose one...</option>
+        <option v-for="category in categories" :value="category.key" v-bind:key="category.key">
+          {{ category.name }}
+        </option>
+      </select>
+    </div>
+    <div class="control search-control">
+      <input class="input" type="text" v-bind:placeholder="'Find ' + category"
+             v-model="search_text">
+    </div>
+    <div>
+      <lu-button @click="setSelectedSearch">Search</lu-button>
     </div>
 </div>
 </template>
 
 <script>
 import { mapState, mapActions } from 'vuex'
-// import RestaurantDetail from './RestaurantDetail'
+import RestaurantDetail from './RestaurantDetail'
 
 export default {
   name: 'Search',
@@ -79,15 +70,18 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "~bulma";
 
-.search {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.search-control {
-  width: 75%;
-}
+  .container {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .search-control {
+    width: 75%;
+  }
+  /*.dorpdown_color {*/
+    /*color: #e28a2b;*/
+  /*}*/
 </style>

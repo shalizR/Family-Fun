@@ -8,5 +8,5 @@ class OpinionSerializer(serializers.ModelSerializer):
     # )
     class Meta:
         model = Opinion
-        fields = ['helpful', 'awesome', 'random']
+        fields = ['id', 'helpful', 'awesome', 'random', 'user']
         # read_only_fields = ['helpful', 'awesome', 'random']

@@ -14,6 +14,7 @@ class CreateReviewView(GenericAPIView):
             Create new review
     """
     serializer_class = ReviewSerializer
+    permission_classes = [IsAuthenticated]
 
     def post(self, request, **kwargs):
         data = {
