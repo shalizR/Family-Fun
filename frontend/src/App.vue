@@ -25,6 +25,5 @@ export default {
 <style lang="scss">
 #app {
   font-family: 'Varela Round', sans-serif;
-  color: #2c3e50;
 }
 </style>

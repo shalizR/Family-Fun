@@ -1,15 +1,14 @@
 <template>
   <div class="container">
     <div class="select">
-      <select v-model="category" v-on:click="renderCategory(category)">
-        <option value="" disabled>Choose one...</option>
-        <option v-for="category in categories" :value="category.key" v-bind:key="category.key">
-          {{ category.name }}
+      <select v-model="category" @change="renderCategory(category)">
+        <option v-for="c in categories" :value="c" v-bind:key="c.key">
+          {{ c.name }}
         </option>
       </select>
     </div>
     <div class="control search-control">
-      <input class="input" type="text" v-bind:placeholder="'Find ' + category"
+      <input class="input" type="text" v-bind:placeholder="'Find ' + category.name"
              v-model="search_text">
     </div>
     <div>
@@ -30,19 +29,13 @@ export default {
       category: '',
     }
   },
-  components: {
-    // RestaurantDetail,
-  },
   mounted () {
-      this.$store.dispatch('search/fetchRestaurantCategories')
-      console.log('this.categories[0]', this.categories[0])
-
-      this.category = this.categories
+      this.$store.dispatch('search/fetchRestaurantCategories').then(o => {
+                this.category = this.categories[0]
       this.fetchRestaurants({ search_text: this.search_text, category: 'restaurant' });
+
+      })
   },
-    updated () {
-      console.log('this.categories[0]', this.category)
-    },
   computed: {
     ...mapState('search', [
       'restaurants',
@@ -55,12 +48,10 @@ export default {
   },
   methods: {
     setSelectedSearch: function() {
-      this.fetchRestaurants({ search_text: this.search_text, category: this.category });
+      this.fetchRestaurants({ search_text: this.search_text, category: this.category.key });
     },
-    renderCategory: function (categoryName) {
-        console.log('Clicked!', categoryName)
-        this.category = categoryName
-        this.fetchRestaurants({search_text: '', category: categoryName});
+    renderCategory: function (category) {
+        this.fetchRestaurants({search_text: '', category: category.key});
     },
     ...mapActions('search', [
       'fetchRestaurants',

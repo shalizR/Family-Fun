@@ -5,7 +5,7 @@ import store from './store/store'
 import baseUrlPlugin from './plugins/baseUrl'
 import Button from './components/Button'
 import VueResource from 'vue-resource'
-import {baseUrl} from "./store/constants";
+import {baseUrl} from './store/constants';
 
 //component registration in here
 Vue.config.productionTip = false

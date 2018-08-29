@@ -36,12 +36,12 @@ const validation = {
                     location: credentials.location
                 })
             }
-
-            fetch('http://localhost:8000/backend/api/auth/registration/validation/', config)
-                .then(res => res.json())
-                .then((data) => {
-                    console.log(data)
-                })
+            // This path is undefined
+            // return fetch('http://localhost:8000/backend/api/auth/registration/validation/', config)
+            //     .then(res => res.json())
+            //     .then((data) => {
+            //         console.log(data)
+            //     })
         }
     }
 }

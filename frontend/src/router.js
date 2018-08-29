@@ -21,16 +21,6 @@ export default new Router({
             name: 'home',
             component: Home
         },
-        // {
-        //   path: '/search',
-        //   name: 'search',
-        //   component: Search
-        // },
-        // {
-        //   path: '/profile',
-        //   name: 'profile',
-        //   component: Profile
-        // },
         {
             path: '/login',
             name: 'login',
@@ -41,11 +31,11 @@ export default new Router({
         //   name: 'footer',
         //   component: Footer
         // },
-        {
-            path: '/validation',
-            name: 'validation',
-            component: Validation
-        },
+        // {
+        //     path: '/validation',
+        //     name: 'validation',
+        //     component: Validation
+        // },
         {
             path: '/newreview/:id/',
             name: 'newReview',

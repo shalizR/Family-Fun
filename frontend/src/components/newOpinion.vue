@@ -35,9 +35,6 @@
 
             })
         },
-        created() {
-            console.log('created', this.id)
-        },
         methods: {
             ...mapActions('reviewCard', [
                 'handleHelpfulOpinion',

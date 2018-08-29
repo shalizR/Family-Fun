@@ -7,7 +7,6 @@ const reviewDetail = {
 
   mutations: {
     setFetchedReviewDetail (state, payload) {
-      console.log(payload)
       state.reviewDetail = payload
     },
   },
@@ -23,7 +22,7 @@ const reviewDetail = {
             headers: myHeader,
         }
 
-        fetch(`http://localhost:8000/backend/api/reviews/${id}/`, config)
+        return fetch(`http://localhost:8000/backend/api/reviews/${id}/`, config)
             .then(res => res.json())
             .then((data) => {
                 context.commit('setFetchedReviewDetail', data)

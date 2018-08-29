@@ -16,10 +16,12 @@ class Review(models.Model):
     )
     date_created = models.DateTimeField(
         verbose_name='date_created',
+        auto_now_add=True,
         null=True,
     )
     date_modified = models.DateTimeField(
         verbose_name='date_modified',
+        auto_now=True,
         null=True,
     )
     user = models.ForeignKey(

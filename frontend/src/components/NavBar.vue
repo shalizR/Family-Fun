@@ -3,16 +3,15 @@
 <template>
 <nav class="navbar nav-color" role="navigation">
     <div class="navbar-start">
-      <figure class="navbar-item image">
-        <img src="../assets/family_fun_small.png" width="112" height="28" alt="Family-fun logo">
+      <figure class="navbar-item logo">
+        <img src="../assets/family_fun_small.png" @click="goToHome" alt="Family-fun logo">
       </figure>
     </div>
     <div class="navbar-end">
       <router-link class="navbar-item" v-bind:to="{ name: 'home'}">Home</router-link>
-      <router-link class="navbar-item" v-bind:to="{ name: 'search'}">Search</router-link>
       <router-link class="navbar-item" v-bind:to="{ name: 'profile'}">Profile</router-link>
       <div class="navbar-item">
-        <router-link v-if="loginVisibility" class="button" v-bind:to="{ name: 'login'}">Login</router-link>
+        <router-link v-if="loginVisibility" class="button is-hovered" v-bind:to="{ name: 'login'}">Login</router-link>
         <a v-else-if="logoutVisibility" class="button" v-on:click="handleLogoutButton">Logout</a>
       </div>
   </div>
@@ -47,6 +46,9 @@ export default {
     },
     handleLogoutButton () {
       this.setLoggedIn(false)
+    },
+    goToHome () {
+        this.$router.push({ name: 'home' })
     }
   },
   mounted () {
@@ -59,10 +61,17 @@ export default {
 
 <style lang="scss" scoped>
 @import "~bulma";
-    .nav-color {
-        background-color: #e28a2b;
-    }
     .navbar {
         margin-bottom: 25px;
+        background-color: #e28a2b;
+        /*color: white;*/
+
+    }
+    .logo {
+        height: 100%;
+        width: 100%;
+    }
+    .navbar-item {
+        color: white;
     }
 </style>

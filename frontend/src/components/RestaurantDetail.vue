@@ -42,41 +42,29 @@
 <script>
     import {mapState} from 'vuex'
     import ReviewCard from "./ReviewCard";
-    mapState: {}
-
     export default {
         components: {ReviewCard},
         beforeRouteUpdate(to, from, next) {
-            this.$store.dispatch('restaurantDetail/fetchRestaurantDetail', this.id)
+          this.$store.dispatch('restaurantDetail/fetchRestaurantDetail', this.id)
             this.$store.dispatch('restaurantDetail/fetchRestaurantReviews', this.id)
-            // this.$store.dispatch('restaurantDetail/submitNewReview', this.id)
         },
-        created() {
-            console.log(this.id)
+        mounted() {
             this.$store.dispatch('restaurantDetail/fetchRestaurantDetail', this.id)
             this.$store.dispatch('restaurantDetail/fetchRestaurantReviews', this.id)
-
         },
         props: {
             id: [Number, String],
         },
         computed: {
+
             ...mapState('restaurantDetail', {
                 restaurantDetail: (state) => state.restaurantDetail,
                 restaurantReviews: (state) => state.restaurantReviews,
 
             })
         },
-
-        // to see the review immediately after adding it
-        mounted () {
-            this.$store.dispatch('restaurantDetail/fetchRestaurantReviews', this.id)
-        },
-
-
         methods: {
             navigateToNewReview(restaurant) {
-                console.log('restaurant', restaurant.id)
                 this.$router.push({name: 'newReview', params: {id: restaurant.id}});
 
             }

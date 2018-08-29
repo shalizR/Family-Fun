@@ -41,7 +41,7 @@ class ReviewSerializer(serializers.ModelSerializer):
             'id',
             'date_created',
             'date_modified',
-            # 'user',
+            'user',
         ]
 
     # def get_likes_count(self, post):

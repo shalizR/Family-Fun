@@ -12,7 +12,6 @@ const search = {
             state.restaurants = payload
         },
         setFetchedRestaurantCategories(state, payload) {
-          console.log('category payload',payload)
             state.categories = payload
         }
     },
@@ -24,13 +23,12 @@ const search = {
                 Authorization: `Bearer ${token}`,
             })
 
-            console.log('token from categories', token)
             const config = {
                 method: 'GET',
                 headers: myHeader
             }
 
-            fetch('http://localhost:8000/backend/api/restaurants/categories/', config)
+            return fetch('http://localhost:8000/backend/api/restaurants/categories/', config)
                 .then(response => {
                     return response.json()
                 })
@@ -56,12 +54,11 @@ const search = {
                 method: 'post',
                 headers: myHeader,
             }
-           fetch(`http://localhost:8000/backend/api/search/${searchSettings.category}/?search_string=${searchSettings.search_text}`, config)
+           return fetch(`http://localhost:8000/backend/api/search/${searchSettings.category}/?search_string=${searchSettings.search_text}`, config)
                 .then(response => {
                     return response.json()
                 })
                 .then(data => {
-                    console.log('data for restaurant category', data)
                         let restaurants = []
                         for (let restaurant of data) {
                             restaurants.push(restaurant)
