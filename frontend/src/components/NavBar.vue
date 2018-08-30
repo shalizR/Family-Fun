@@ -4,7 +4,7 @@
 <nav class="navbar nav-color" role="navigation">
     <div class="navbar-start">
       <figure class="navbar-item logo">
-        <img src="../assets/familyfun.jpg" @click="goToHome" alt="Family-fun logo">
+        <img src="../assets/family_fun.jpg" @click="goToHome" alt="Family-fun logo">
       </figure>
     </div>
     <div class="navbar-end">
