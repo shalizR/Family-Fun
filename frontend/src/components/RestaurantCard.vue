@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="card">
-            <div class="card-content" @click="handleRestaurantDetail">
+            <div class="card-content card-container" @click="handleRestaurantDetail">
                 <div class="media">
                     <div class="media-left">
                         <figure class="image is-64x64">
@@ -13,7 +13,7 @@
                         <h3 class="subtitle is-6">Rating: {{ Math.round(restaurant.rating) }} </h3>
                     </div>
                 </div>
-                <div class="content">
+                <div class="content content-container">
                     <div class="columns">
                         <div class="column is-6">
                             <p class="subtitle is-6">{{restaurant.street}}{{restaurant.ZIP}}, {{restaurant.city}}</p>
@@ -63,6 +63,15 @@
         height: 100% !important;
         width: auto !important;
     }
+
+    /*.card-container {*/
+        /*width: 40%;*/
+    /*}*/
+
+    /*.content-container {*/
+        /*!*display: flex;*!*/
+        /*width: 50%;*/
+    /*}*/
 
 </style>
 

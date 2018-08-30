@@ -84,7 +84,7 @@
     }
     .title {
         text-decoration: underline;
-        text-decoration-color: #e28a2b;
+        text-decoration-color: #ffaf24;
         text-decoration-style: solid;
     }
     .errors {

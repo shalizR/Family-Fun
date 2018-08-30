@@ -3,10 +3,10 @@ import Vuex from 'vuex';
 import login from './login';
 import search from './search';
 import navbar from './navbar';
-import validation from './validation';
 import home from './home';
 import opinion from './opinion';
-import restaurantDetail from './restaurantDetail'
+import restaurantDetail from './restaurantDetail';
+import reviewDetail from './reviewDetail';
 
 Vue.use(Vuex)
 
@@ -15,9 +15,9 @@ modules: {
     login,
     search,
     navbar,
-    validation,
     home,
     restaurantDetail,
     opinion,
+    reviewDetail,
 },
 });

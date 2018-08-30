@@ -26,7 +26,7 @@
 
                     </div>
                     <div class="column">
-                        <lu-button v-on:click="navigateToNewReview(restaurantDetail)">Add a review</lu-button>
+                        <lu-button class="add_button" v-on:click="navigateToNewReview(restaurantDetail)">Add a review</lu-button>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@
         components: {ReviewCard},
         beforeRouteUpdate(to, from, next) {
           this.$store.dispatch('restaurantDetail/fetchRestaurantDetail', this.id)
-            this.$store.dispatch('restaurantDetail/fetchRestaurantReviews', this.id)
+          this.$store.dispatch('restaurantDetail/fetchRestaurantReviews', this.id)
         },
         mounted() {
             this.$store.dispatch('restaurantDetail/fetchRestaurantDetail', this.id)
@@ -63,6 +63,9 @@
 
             })
         },
+        updated() {
+            this.$store.dispatch('restaurantDetail/fetchRestaurantReviews', this.id)
+        },
         methods: {
             navigateToNewReview(restaurant) {
                 this.$router.push({name: 'newReview', params: {id: restaurant.id}});
@@ -74,7 +77,7 @@
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import "~bulma";
 
     .container {
@@ -85,6 +88,9 @@
         text-decoration: underline;
         text-decoration-color: #e28a2b;
         text-decoration-style: solid;
+    }
+    .add_button {
+        margin-left: 100px;
     }
 
 

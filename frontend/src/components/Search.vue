@@ -31,8 +31,8 @@ export default {
   },
   mounted () {
       this.$store.dispatch('search/fetchRestaurantCategories').then(o => {
-                this.category = this.categories[0]
-      this.fetchRestaurants({ search_text: this.search_text, category: 'restaurant' });
+          this.category = this.categories[0]
+          this.fetchRestaurants({ search_text: this.search_text, category: 'restaurant' });
 
       })
   },
@@ -68,6 +68,7 @@ export default {
     margin: 20px 0;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
   .search-control {
     width: 75%;

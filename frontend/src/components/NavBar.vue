@@ -4,7 +4,7 @@
 <nav class="navbar nav-color" role="navigation">
     <div class="navbar-start">
       <figure class="navbar-item logo">
-        <img src="../assets/family_fun_small.png" @click="goToHome" alt="Family-fun logo">
+        <img src="../assets/familyfun.jpg" @click="goToHome" alt="Family-fun logo">
       </figure>
     </div>
     <div class="navbar-end">
@@ -63,7 +63,7 @@ export default {
 @import "~bulma";
     .navbar {
         margin-bottom: 25px;
-        background-color: #e28a2b;
+        background-color: #ffaf24;
         /*color: white;*/
 
     }

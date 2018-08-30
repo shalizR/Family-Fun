@@ -2,7 +2,6 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './components/Home.vue';
 import Login from './components/Login.vue';
-import Validation from './components/Validation';
 import RestaurantDetail from './components/RestaurantDetail';
 import NewReview from './components/NewReview';
 
@@ -30,11 +29,6 @@ export default new Router({
         //   path: '/footer',
         //   name: 'footer',
         //   component: Footer
-        // },
-        // {
-        //     path: '/validation',
-        //     name: 'validation',
-        //     component: Validation
         // },
         {
             path: '/newreview/:id/',

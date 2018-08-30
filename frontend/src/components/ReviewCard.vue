@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-        <div class="card-content">
+        <div class="card-content card-container">
             <div class="media">
                 <div class="media-left">
                     <figure class="image is-48x48 user_pic">
@@ -34,23 +34,28 @@
                     <h3 v-else>Has tablecloth: No</h3>
                 </div>
             </div>
+
             <div class="columns">
-                <div class="column">
-                    <p>Was this review ...?</p>
-                    <lu-button class="button" v-on:click="toggleHelpfulOpinion">Helpful {{helpfulCounter}}</lu-button>
-                    <lu-button class="button" v-on:click="toggleAwesomeOpinion">Awesome {{awesomeCounter}}</lu-button>
-                    <lu-button v-on:click="toggleRandomOpinion">Random {{randomCounter}}</lu-button>
+                <div class="column container">
+                    <div class="item1">
+                        <div class="label">Was this review ...?</div>
+                        <div class="grouped-button">
+                            <lu-button v-on:click="toggleHelpfulOpinion">Helpful {{helpfulCounter}}</lu-button>
+                            <lu-button v-on:click="toggleAwesomeOpinion">Awesome {{awesomeCounter}}</lu-button>
+                            <lu-button v-on:click="toggleRandomOpinion">Random {{randomCounter}}</lu-button>
+                        </div>
+                    </div>
+                    <div class="item2">
+                        <lu-button @click="handleDelete">Delete review</lu-button>
+                    </div>
                 </div>
-
             </div>
-
-
         </div>
     </div>
 </template>
 
 <script>
-    import moment from 'moment'
+    import moment from 'moment';
 
     export default {
 
@@ -84,10 +89,18 @@
             randomCounter() {
                 return this.review.opinions.filter(o => o.random === true).length
             },
-        },
+            },
+        // updated () {
+        //     this.$store.dispatch('reviewDetail/deleteReview', this.id)
+        //
+        //     },
+
         methods: {
             formatDate(date) {
                 return moment(date).format('DD/MM/YYYY')
+            },
+            handleDelete() {
+                this.$store.dispatch('reviewDetail/deleteReview', {reviewId:this.review.id})
             },
 
             toggleHelpfulOpinion() {
@@ -141,26 +154,37 @@
         },
 
 
+
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import "~bulma";
+
+    .card-container {
+        width: 60%;
+    }
 
     .container {
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 80%;
-        text-align: left;
+        width: 100%;
+        justify-content: space-between;
     }
-
+    .item1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .item2 {
+        align-self: flex-end;
+    }
     .user_pic {
         height: 100% !important;
         width: auto !important;
     }
-    .button {
-        margin-right: 5px;
+    .grouped-button{
+        display: flex;
+        justify-content: space-between;
+        width: 321px;
     }
 </style>
 
