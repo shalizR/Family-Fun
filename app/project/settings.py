@@ -70,6 +70,7 @@ MIDDLEWARE = [
 CORS_ORIGIN_WHITELIST = [
     'family-fun.propulsion-learn.ch',
     'localhost:8080',
+    'localhost:8082',
 ]
 
 ROOT_URLCONF = 'project.urls'
