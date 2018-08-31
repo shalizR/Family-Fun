@@ -18,7 +18,10 @@ export default {
   components: {
     NavBar,
     // Footer
-  }
+  },
+  created() {
+    this.$store.dispatch('login/fetchUserProfile')
+  },
 }
 </script>
 
@@ -26,4 +29,7 @@ export default {
 #app {
   font-family: 'Varela Round', sans-serif;
 }
+  body {
+    margin: 0;
+  }
 </style>

@@ -9,11 +9,6 @@ const reviewDetail = {
     setFetchedReviewDetail (state, payload) {
       state.reviewDetail = payload
     },
-    setFetchedDeleteReview(state, payload) {
-        const review = state.reviewDetail.find(o => o.id === payload.reviewId)
-        const index = state.reviewDetail.indexOf(review)
-        state.reviewDetail.splice(index, 1)
-    },
 
   },
 
@@ -32,26 +27,6 @@ const reviewDetail = {
             .then(res => res.json())
             .then((data) => {
                 context.commit('setFetchedReviewDetail', data)
-            })
-    },
-
-    deleteReview(context, id) {
-        const token = localStorage.getItem('accessToken')
-        const myHeader = new Headers({
-            Authorization: `Bearer ${token}`
-        })
-        const config = {
-            method: 'DELETE',
-            headers: myHeader,
-        }
-        return fetch(`http://localhost:8000/backend/api/reviews/${id.reviewId}/`, config)
-            .then(res => {
-                if(res.status === 204) {
-                    context.commit('setFetchedDeleteReview', id)
-                }
-                else {
-                    return res
-                }
             })
     },
 

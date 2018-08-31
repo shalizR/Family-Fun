@@ -1,22 +1,28 @@
 import Vue from 'vue'
+
 const login = {
     namespaced: true,
 
     state: {
         token: {},
-        errors: {}
+        errors: {},
+        userProfile: {},
     },
 
     mutations: {
         setToken(state, payload) {
             state.token = payload
         },
-        setErrors (state, errors) {
+        setErrors(state, errors) {
             state.errors = errors
-        }
+        },
+        setUserProfile(state, userProfile) {
+            state.userProfile = userProfile
+        },
     },
     getters: {
-        getErrors: state => state.errors
+        getErrors: state => state.errors,
+        getUserProfile: state => state.userProfile,
     },
     actions: {
         fetchToken: function ({commit}, credentials) {
@@ -31,7 +37,22 @@ const login = {
                     commit('setErrors', err.body)
                     throw err
                 })
-        }
+        },
+        fetchUserProfile: function ({commit}) {
+            const token = localStorage.getItem('accessToken')
+            if (token) {
+                Vue.http.headers.common['Authorization'] = `Bearer ${token}`;
+                return Vue.http.get('api/users/me/')
+                    .then(response => {
+                        commit('setUserProfile', response.body)
+                        return response
+                    }).catch(err => {
+                        throw err
+                    })
+
+
+            }
+        },
     }
 }
 

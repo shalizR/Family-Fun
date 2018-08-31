@@ -66,9 +66,9 @@
 
             })
         },
-        updated() {
-            this.$store.dispatch('restaurantDetail/fetchRestaurantReviews', this.id)
-        },
+        // watch: {
+        //     this.$store.dispatch('restaurantDetail/fetchRestaurantReviews', this.id)
+        // },
         methods: {
             navigateToNewReview(restaurant) {
                 this.$router.push({name: 'newReview', params: {id: restaurant.id}});

@@ -3,7 +3,7 @@ const restaurantDetail = {
 
     state: {
         restaurantDetail: {},
-        restaurantReviews: {},
+        restaurantReviews: [],
         newReview: {},
     },
 
@@ -59,6 +59,12 @@ const restaurantDetail = {
                 })
             }
         },
+
+        setFetchedDeleteReview(state, id) {
+            const i = state.restaurantReviews.findIndex((o => o.id === id))
+            state.restaurantReviews.splice(i, 1)
+        },
+
     },
 
     actions: {
@@ -100,12 +106,34 @@ const restaurantDetail = {
 
         },
 
+        deleteReview(context, id) {
+            const token = localStorage.getItem('accessToken')
+            const myHeader = new Headers({
+                Authorization: `Bearer ${token}`
+            })
+            const config = {
+                method: 'DELETE',
+                headers: myHeader,
+            }
+            return fetch(`http://localhost:8000/backend/api/reviews/${id}/`, config)
+                .then(res => {
+                    if (res.status === 204) {
+                        context.commit('setFetchedDeleteReview', id)
+                    }
+                    else {
+                        return res
+                    }
+                })
+        },
+
+
         submitNewReview(context, params) {
             const token = localStorage.getItem('accessToken')
             const myHeader = new Headers({
                 Authorization: `Bearer ${token}`,
                 'Content-Type': 'application/json'
             })
+            console.log(params)
 
             const config = {
                 method: 'POST',

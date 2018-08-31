@@ -26,9 +26,9 @@
             <div class="select-label">
                 <span class="label">Is there a changing table?</span>
                 <div class="select select-container">
-                    <select v-model="params.changingTable">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
+                    <select v-model="params.has_changing_table">
+                        <option :value="true">Yes</option>
+                        <option :value="false">No</option>
                     </select>
                 </div>
             </div>
@@ -36,26 +36,26 @@
                 <span class="label">Is it noisy?</span>
                 <div class="select select-container">
                     <select v-model="params.isNoisy">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
+                        <option :value="true">Yes</option>
+                        <option :value="false">No</option>
                     </select>
                 </div>
             </div>
             <div class="select-label">
                 <span class="label">Is there high chairs for children?</span>
                 <div class="select select-container">
-                    <select v-model="params.highChair">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
+                    <select v-model="params.high_chair">
+                        <option :value="true">Yes</option>
+                        <option :value="false">No</option>
                     </select>
                 </div>
             </div>
             <div class="select-label">
                 <span class="label">Are the waiting staff sympathetic?</span>
                 <div class="select select-container">
-                    <select v-model="params.staff">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
+                    <select v-model="params.friendly_waiting_staff">
+                        <option :value="true">Yes</option>
+                        <option :value="false">No</option>
                     </select>
                 </div>
             </div>
@@ -64,7 +64,7 @@
             <div class="select-label">
                 <span class="label">Price level</span>
                 <div class="select select-container">
-                    <select v-model="params.priceLevel">
+                    <select v-model="params.price_level">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -75,36 +75,36 @@
             <div class="select-label">
                 <span class="label">Is there place for strollers?</span>
                 <div class="select select-container">
-                    <select v-model="params.stroller">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
+                    <select v-model="params.place_for_stroller">
+                        <option :value="true">Yes</option>
+                        <option :value="false">No</option>
                     </select>
                 </div>
             </div>
             <div class="select-label">
                 <span class="label">Are there steps?</span>
                 <div class="select select-container">
-                    <select v-model="params.steps">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
+                    <select v-model="params.are_there_steps">
+                        <option :value="true">Yes</option>
+                        <option :value="false">No</option>
                     </select>
                 </div>
             </div>
             <div class="select-label">
                 <span class="label">Is the service quick?</span>
                 <div class="select select-container">
-                    <select v-model="params.quickService">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
+                    <select v-model="params.has_quick_service">
+                        <option :value="true">Yes</option>
+                        <option :value="false">No</option>
                     </select>
                 </div>
             </div>
             <div class="select-label">
                 <span class="label">Are tables covered with tablecloths?</span>
                 <div class="select select-container">
-                    <select v-model="params.tablecloth">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
+                    <select v-model="params.has_tablecloth">
+                        <option :value="true">Yes</option>
+                        <option :value="false">No</option>
                     </select>
                 </div>
             </div>
@@ -127,14 +127,14 @@
                     content: '',
                     rating: null,
                     priceLevel: null,
-                    highChair: false,
-                    steps: false,
-                    changingTable: false,
-                    stroller: false,
-                    isNoisy: false,
-                    staff: false,
-                    tablecloth: false,
-                    quickService: false,
+                    highChair: null,
+                    steps: null,
+                    changingTable: null,
+                    stroller: null,
+                    isNoisy: null,
+                    staff: null,
+                    tablecloth: null,
+                    quickService: null,
                 }
             }
         },
@@ -154,19 +154,14 @@
 
             ]),
             handleSubmit () {
-
                 this.$store.dispatch('restaurantDetail/submitNewReview', {params: this.params, id: this.id})
                     .then(() => {
                         this.$router.push({name: 'RestaurantDetail'})
                     })
             },
-
-
             setSelectedSearch: function () {
                 this.fetchRestaurants({search_text: this.search_text, category: this.category});
             },
-
-
         }
     }
 </script>
