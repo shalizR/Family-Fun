@@ -191,6 +191,7 @@
                     border-top: 1px solid #ededed;
 
         }
+        padding: 4px 0;
     }
 
     .review-image {
