@@ -20,12 +20,10 @@
                             <li>
                                 <a :href="restaurantDetail.website" target="_blank"
                                    v-text="restaurantDetail.website"></a>
-
                             </li>
                             <li>
                                 <a :href="`tel:${restaurantDetail.phone}`" target="_blank"
                                    v-text="restaurantDetail.phone"></a>
-
                             </li>
                         </ul>
                         <br>
@@ -45,7 +43,7 @@
                     </div>
                 </div>
             </div>
-            <div class="column is-6">
+            <div class="column is-6 review-scrollbar">
                 <h2 class="subtitle title_name">Reviews</h2>
                 <div v-if="restaurantReviews">
                     <review-card v-for="review in restaurantReviews" :review="review"></review-card>
@@ -105,5 +103,10 @@
     .button-box {
         text-align: right;
         padding: 20px;
+    }
+    .review-scrollbar {
+        overflow-y: auto;
+        max-height: calc(100vh - 170px);
+
     }
 </style>

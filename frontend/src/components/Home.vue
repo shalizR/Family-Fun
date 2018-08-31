@@ -2,7 +2,6 @@
     <div>
         <Search/>
         <div class="container">
-
             <div class='columns'>
                 <div class="column is-4" v-for="restaurant in restaurants" v-bind:key="restaurant.id">
                     <restaurant-card :restaurant="restaurant"/>

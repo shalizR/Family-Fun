@@ -27,11 +27,11 @@
                     <h3 v-if="review.place_for_stroller">Place for stroller? <strong>Yes</strong></h3>
                     <h3 v-else>Place for stroller? <strong>No</strong></h3>
                     <h3 v-if="review.isNoisy">Noisy? <strong>Yes</strong></h3>
-                    <h3 v-else>Noisy: <strong>No</strong></h3>
+                    <h3 v-else>Noisy? <strong>No</strong></h3>
                     <h3 v-if="review.friendly_waiting_staff">Friendly waiting staff? <strong>Yes</strong></h3>
                     <h3 v-else>Friendly waiting staff? <strong>No</strong></h3>
-                    <h3 v-if="review.has_tablecloth">Has tablecloth? <strong>Yes</strong></h3>
-                    <h3 v-else>Has tablecloth: <strong>No</strong></h3>
+                    <h3 v-if="review.has_tablecloth">Has tablecloths? <strong>Yes</strong></h3>
+                    <h3 v-else>Has tablecloths? <strong>No</strong></h3>
                 </div>
             </div>
 

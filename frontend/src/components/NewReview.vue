@@ -26,7 +26,7 @@
             </div>
 
             <div class="select-label">
-                <span class="label">Is there a changing table?</span>
+                <span class="label">Has baby changing table?</span>
                 <div class="select select-container">
                     <select v-model="params.has_changing_table">
                         <option :value="true">Yes</option>
@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class="select-label">
-                <span class="label">Is it noisy?</span>
+                <span class="label">Noisy?</span>
                 <div class="select select-container">
                     <select v-model="params.isNoisy">
                         <option :value="true">Yes</option>
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div class="select-label">
-                <span class="label">Is there high chairs for children?</span>
+                <span class="label">Has high chairs?</span>
                 <div class="select select-container">
                     <select v-model="params.high_chair">
                         <option :value="true">Yes</option>
@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="select-label">
-                <span class="label">Are the waiting staff sympathetic?</span>
+                <span class="label">Sympathetic waiting staff?</span>
                 <div class="select select-container">
                     <select v-model="params.friendly_waiting_staff">
                         <option :value="true">Yes</option>
@@ -75,7 +75,7 @@
                 </div>
             </div>
             <div class="select-label">
-                <span class="label">Is there place for strollers?</span>
+                <span class="label">Place for strollers?</span>
                 <div class="select select-container">
                     <select v-model="params.place_for_stroller">
                         <option :value="true">Yes</option>
@@ -93,7 +93,7 @@
                 </div>
             </div>
             <div class="select-label">
-                <span class="label">Is the service quick?</span>
+                <span class="label">Quick service?</span>
                 <div class="select select-container">
                     <select v-model="params.has_quick_service">
                         <option :value="true">Yes</option>
@@ -102,7 +102,7 @@
                 </div>
             </div>
             <div class="select-label">
-                <span class="label">Are tables covered with tablecloths?</span>
+                <span class="label">Tables with tablecloths?</span>
                 <div class="select select-container">
                     <select v-model="params.has_tablecloth">
                         <option :value="true">Yes</option>
