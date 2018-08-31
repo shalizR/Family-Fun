@@ -9,7 +9,7 @@
     </div>
     <div class="navbar-end">
       <router-link class="navbar-item" v-bind:to="{ name: 'home'}">Home</router-link>
-      <router-link class="navbar-item" v-bind:to="{ name: 'profile'}">Profile</router-link>
+      <!--<router-link class="navbar-item" v-bind:to="{ name: 'profile'}">Profile</router-link>-->
       <div class="navbar-item">
         <router-link v-if="loginVisibility" class="button is-hovered" v-bind:to="{ name: 'login'}">Login</router-link>
         <a v-else-if="logoutVisibility" class="button" v-on:click="handleLogoutButton">Logout</a>
