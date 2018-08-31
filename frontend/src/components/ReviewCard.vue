@@ -21,7 +21,7 @@
                     <h3 v-if="review.has_changing_table">Changing table for babies? <strong>Yes</strong></h3>
                     <h3 v-else>Changing table for babies? <strong>No</strong></h3>
                     <h3 v-if="review.has_quick_service">Quick service? <strong>Yes</strong></h3>
-                    <h3 v-else>Quick service? No</h3>
+                    <h3 v-else>Quick service? <strong>No</strong></h3>
                 </div>
                 <div class="column">
                     <h3 v-if="review.place_for_stroller">Place for stroller? <strong>Yes</strong></h3>
@@ -197,6 +197,9 @@
     .review-image {
         width: 70px !important;
         height: 70px !important;
+    }
+    .column {
+        margin-top: 5px;
     }
 </style>
 

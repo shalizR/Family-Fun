@@ -27,7 +27,7 @@
                             </li>
                         </ul>
                         <br>
-                        <p v-if="restaurantDetail.kids_menu">strongKids menu: <strong>Yes</strong></p>
+                        <p v-if="restaurantDetail.kids_menu">Kids menu: <strong>Yes</strong></p>
                         <p v-else>Kids menu: <strong>No</strong></p>
                         <p v-if="restaurantDetail.take_reservation">Take reservation: <strong>Yes</strong></p>
                         <p v-else>Take reservation: <strong>No</strong></p>

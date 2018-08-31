@@ -201,7 +201,7 @@
     .select-label {
         margin: 20px 10px;
         width: 30%;
-        height: 100px;
+        height: 90px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

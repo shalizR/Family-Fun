@@ -1,0 +1,2628 @@
+[
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can add restaurant",
+      "content_type": 7,
+      "codename": "add_restaurant"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can change restaurant",
+      "content_type": 7,
+      "codename": "change_restaurant"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can delete restaurant",
+      "content_type": 7,
+      "codename": "delete_restaurant"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can add review",
+      "content_type": 8,
+      "codename": "add_review"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can change review",
+      "content_type": 8,
+      "codename": "change_review"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can delete review",
+      "content_type": 8,
+      "codename": "delete_review"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add opinion",
+      "content_type": 9,
+      "codename": "add_opinion"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change opinion",
+      "content_type": 9,
+      "codename": "change_opinion"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete opinion",
+      "content_type": 9,
+      "codename": "delete_opinion"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can add codes",
+      "content_type": 10,
+      "codename": "add_codes"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can change codes",
+      "content_type": 10,
+      "codename": "change_codes"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can delete codes",
+      "content_type": 10,
+      "codename": "delete_codes"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can add email",
+      "content_type": 11,
+      "codename": "add_email"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can change email",
+      "content_type": 11,
+      "codename": "change_email"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can delete email",
+      "content_type": 11,
+      "codename": "delete_email"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can add User profile",
+      "content_type": 12,
+      "codename": "add_userprofile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can change User profile",
+      "content_type": 12,
+      "codename": "change_userprofile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can delete User profile",
+      "content_type": 12,
+      "codename": "delete_userprofile"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$bNp0YX55ccY4$Lm+EagtNmClo+wu0r6MaxfKsyNUsupMGnUBJN7JgOc0=",
+      "last_login": "2018-08-28T09:56:29.862Z",
+      "is_superuser": true,
+      "username": "Shaliz",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2018-08-17T12:24:46Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$ICFWyhoQuvVK$6yzhwezOTVlaK9rztw0TQ5c8VEK8hP9JgIW1w/o7dqU=",
+      "last_login": "2018-08-19T05:30:49Z",
+      "is_superuser": false,
+      "username": "Jana",
+      "first_name": "Jana",
+      "last_name": "Owner",
+      "email": "owner@mail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-08-19T05:30:51Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$tp9nLc0azkYx$FU8Bt6CCSEZez/2774LoNOn9vPodAtI5rDQ45jOBOMw=",
+      "last_login": "2018-08-19T05:37:13Z",
+      "is_superuser": false,
+      "username": "Samantha",
+      "first_name": "Samantha",
+      "last_name": "Hamilton",
+      "email": "samantha.hamilton82@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-08-19T05:37:14Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$sVpTcKbdI0jC$KuY+gAUZxVvUwW+NSXj87ncjCagPOK6XCVtQhMPOCo0=",
+      "last_login": "2018-08-19T05:41:23Z",
+      "is_superuser": false,
+      "username": "George",
+      "first_name": "George",
+      "last_name": "Palmer",
+      "email": "george.palmer68@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-08-19T05:41:25Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$z2zTqO9TjMFZ$ujgDMme4ASnqb3S4tZDGlVC0cU3PJ2VjEISVdDPvm5U=",
+      "last_login": "2018-08-19T05:44:36Z",
+      "is_superuser": false,
+      "username": "Charles",
+      "first_name": "Charles",
+      "last_name": "Hanson",
+      "email": "charles.hanson65@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-08-19T05:44:37Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$ePVHlcOWkDMw$it8ryEYpffT22a2Xn8v7pke90lhQShh0Uw3f/OWN7MY=",
+      "last_login": "2018-08-19T05:47:32Z",
+      "is_superuser": false,
+      "username": "Margie",
+      "first_name": "Margie",
+      "last_name": "Holmes",
+      "email": "margie.holmes61@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-08-19T05:47:33Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$bVBVkKsY21Z6$ZS0GaBWBmoZFNP7oOs1aXgPljx6uEiJD/vLa/ivVQXE=",
+      "last_login": "2018-08-19T05:49:07Z",
+      "is_superuser": false,
+      "username": "Alyssa",
+      "first_name": "Alyssa",
+      "last_name": "Montgomery",
+      "email": "alyssa.montgomery99@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-08-19T05:48:41Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 8,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$lvS0ZYqAOwoP$kc7IKUnXLNcRsYn8Qxm1sIUdZ+iLQyZwPtYkNZJ6DS8=",
+      "last_login": "2018-08-19T05:50:50Z",
+      "is_superuser": false,
+      "username": "Juanita",
+      "first_name": "Juanita",
+      "last_name": "Bishop",
+      "email": "juanita.bishop22@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-08-19T05:50:20Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 9,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$ROyPEBniePwF$7maq3ffRtKbZhGPbpV0Pbnjr2l2eay/C6maQUBUMiQY=",
+      "last_login": "2018-08-19T05:52:11Z",
+      "is_superuser": false,
+      "username": "Cory",
+      "first_name": "cory",
+      "last_name": "armstrong",
+      "email": "cory.armstrong90@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-08-19T05:51:44Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 10,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$EZZx6Fn1Rfsa$tWP4cj2odFLTrHI2tE5/8nb3TaPYZQwzYxWCGc6gq7Q=",
+      "last_login": "2018-08-19T05:53:28Z",
+      "is_superuser": false,
+      "username": "Ana",
+      "first_name": "Ana",
+      "last_name": "Jimenez",
+      "email": "ana.jimenez68@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-08-19T05:53:01Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 11,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$Xi65i1KiECl7$7/sl9NzDBcmD/ct0EqJMFe7NrAB1OcKDkmlD8o638NE=",
+      "last_login": "2018-08-19T05:54:53Z",
+      "is_superuser": false,
+      "username": "Sophia",
+      "first_name": "Sophia",
+      "last_name": "Edwards",
+      "email": "sophia.edwards69@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-08-19T05:54:17Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 12,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$pp20WpJNG40U$lPmIK7MQ97vXO8eUQ2qC4jw1c1bX4DJH2vL22Uz+Xcc=",
+      "last_login": "2018-08-19T05:56:32Z",
+      "is_superuser": false,
+      "username": "Shane",
+      "first_name": "Shane",
+      "last_name": "Lee",
+      "email": "shane.lee13@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-08-19T05:56:09Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 13,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$N5YDlHZ8qzcB$pkPaGopuM50Z5QOE86uBoDEL93iCXfO69WLSMGS5xso=",
+      "last_login": "2018-08-19T05:57:59Z",
+      "is_superuser": false,
+      "username": "Ryan",
+      "first_name": "Ryan",
+      "last_name": "Gonzalez",
+      "email": "ryan.gonzalez28@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-08-19T05:57:32Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 14,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$SmBpkDpUyQ4B$4ZIhjWLzd3NW80Dy1O/Hmj+R3VzMvbHC7P80sECT1ho=",
+      "last_login": "2018-08-19T05:59:24Z",
+      "is_superuser": false,
+      "username": "Bessie",
+      "first_name": "Bessie",
+      "last_name": "Bailey",
+      "email": "bessie.bailey12@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-08-19T05:58:54Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 15,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$jHSEwaUG4VYD$gXui0SL1OtmZH+GswxQOmYX1KOKhD6xI1/3IRBcb65k=",
+      "last_login": "2018-08-20T06:13:03Z",
+      "is_superuser": false,
+      "username": "Jack",
+      "first_name": "Jack",
+      "last_name": "Cruz",
+      "email": "jack.cruz18@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-08-20T06:12:38Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 16,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$SRVmFXoEzwBb$EpnVSztJlGJ+wAjiVqxPBFtSgD6aMEO2fFuU9PRIu8Q=",
+      "last_login": "2018-08-20T06:14:03Z",
+      "is_superuser": false,
+      "username": "Sara",
+      "first_name": "Sara",
+      "last_name": "Nelson",
+      "email": "sara.nelson73@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-08-20T06:13:40Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 17,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$NJGgLKocPqKI$4HUFeHdSyM+CXVid/n0Pry7nubB+42YsIdqDR41e0C8=",
+      "last_login": "2018-08-20T06:15:09Z",
+      "is_superuser": false,
+      "username": "Andre",
+      "first_name": "Andre",
+      "last_name": "Webb",
+      "email": "andre.webb67@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-08-20T06:14:44Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user_profile.userprofile",
+    "pk": 1,
+    "fields": {
+      "user": 7,
+      "location": "Z\u00fcrich",
+      "phone": "052 565 30166",
+      "joined_date": "2018-08-20T06:17:25Z",
+      "profile_pic": "user_profile/Alyssa_Montgomery.jpg"
+    }
+  },
+  {
+    "model": "user_profile.userprofile",
+    "pk": 2,
+    "fields": {
+      "user": 10,
+      "location": "Z\u00fcrich",
+      "phone": "445583410",
+      "joined_date": "2018-08-20T06:19:29Z",
+      "profile_pic": "user_profile/Ana_Jimenez.jpg"
+    }
+  },
+  {
+    "model": "user_profile.userprofile",
+    "pk": 3,
+    "fields": {
+      "user": 17,
+      "location": "Z\u00fcrich",
+      "phone": "442711012",
+      "joined_date": "2018-08-20T06:19:47Z",
+      "profile_pic": "user_profile/Andre_Webb.jpg"
+    }
+  },
+  {
+    "model": "user_profile.userprofile",
+    "pk": 4,
+    "fields": {
+      "user": 14,
+      "location": "Z\u00fcrich",
+      "phone": "796892777",
+      "joined_date": "2018-08-20T06:20:04Z",
+      "profile_pic": "user_profile/Bessie_Bailey.jpg"
+    }
+  },
+  {
+    "model": "user_profile.userprofile",
+    "pk": 5,
+    "fields": {
+      "user": 5,
+      "location": "Z\u00fcrich",
+      "phone": "432052888",
+      "joined_date": "2018-08-20T06:20:22Z",
+      "profile_pic": "user_profile/charles_hanson.jpg"
+    }
+  },
+  {
+    "model": "user_profile.userprofile",
+    "pk": 6,
+    "fields": {
+      "user": 9,
+      "location": "Z\u00fcrich",
+      "phone": "442729471",
+      "joined_date": "2018-08-20T06:20:41Z",
+      "profile_pic": "user_profile/cory_armstrong.jpg"
+    }
+  },
+  {
+    "model": "user_profile.userprofile",
+    "pk": 7,
+    "fields": {
+      "user": 4,
+      "location": "Z\u00fcrich",
+      "phone": "442729471",
+      "joined_date": "2018-08-20T06:21:04Z",
+      "profile_pic": "user_profile/George_palmer.jpg"
+    }
+  },
+  {
+    "model": "user_profile.userprofile",
+    "pk": 8,
+    "fields": {
+      "user": 15,
+      "location": "Z\u00fcrich",
+      "phone": "435436351",
+      "joined_date": "2018-08-20T06:21:25Z",
+      "profile_pic": "user_profile/Jack_Cruz.jpg"
+    }
+  },
+  {
+    "model": "user_profile.userprofile",
+    "pk": 9,
+    "fields": {
+      "user": 2,
+      "location": "Z\u00fcrich",
+      "phone": "442423000",
+      "joined_date": "2018-08-20T06:21:45Z",
+      "profile_pic": ""
+    }
+  },
+  {
+    "model": "user_profile.userprofile",
+    "pk": 10,
+    "fields": {
+      "user": 8,
+      "location": "Z\u00fcrich",
+      "phone": "442729471",
+      "joined_date": "2018-08-20T06:22:09Z",
+      "profile_pic": "user_profile/Juanita_Bishop.jpg"
+    }
+  },
+  {
+    "model": "user_profile.userprofile",
+    "pk": 11,
+    "fields": {
+      "user": 6,
+      "location": "Z\u00fcrich",
+      "phone": "449282110",
+      "joined_date": "2018-08-20T06:22:28Z",
+      "profile_pic": "user_profile/Margie_Holmes.jpg"
+    }
+  },
+  {
+    "model": "user_profile.userprofile",
+    "pk": 12,
+    "fields": {
+      "user": 13,
+      "location": "Z\u00fcrich",
+      "phone": "444406622",
+      "joined_date": "2018-08-20T06:22:47Z",
+      "profile_pic": "user_profile/Ryan_Gonzalez.jpg"
+    }
+  },
+  {
+    "model": "user_profile.userprofile",
+    "pk": 13,
+    "fields": {
+      "user": 3,
+      "location": "Z\u00fcrich",
+      "phone": "442010060",
+      "joined_date": "2018-08-20T06:23:18Z",
+      "profile_pic": "user_profile/Samantha.jpg"
+    }
+  },
+  {
+    "model": "user_profile.userprofile",
+    "pk": 14,
+    "fields": {
+      "user": 16,
+      "location": "Z\u00fcrich",
+      "phone": "433669050",
+      "joined_date": "2018-08-20T06:23:39Z",
+      "profile_pic": "user_profile/sara_nelson.jpg"
+    }
+  },
+  {
+    "model": "user_profile.userprofile",
+    "pk": 15,
+    "fields": {
+      "user": 1,
+      "location": "Z\u00fcrich",
+      "phone": "439603707",
+      "joined_date": "2018-08-20T06:23:58Z",
+      "profile_pic": "user_profile/shaliz.jpg"
+    }
+  },
+  {
+    "model": "user_profile.userprofile",
+    "pk": 16,
+    "fields": {
+      "user": 12,
+      "location": "Z\u00fcrich",
+      "phone": "442711012",
+      "joined_date": "2018-08-20T06:24:14Z",
+      "profile_pic": "user_profile/Shane_Lee.jpg"
+    }
+  },
+  {
+    "model": "user_profile.userprofile",
+    "pk": 17,
+    "fields": {
+      "user": 11,
+      "location": "Z\u00fcrich",
+      "phone": "432052888",
+      "joined_date": "2018-08-20T06:24:36Z",
+      "profile_pic": "user_profile/sophia_edwards.jpg"
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 1,
+    "fields": {
+      "user": 9,
+      "review": 22,
+      "helpful": false,
+      "awesome": false,
+      "random": true
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 2,
+    "fields": {
+      "user": 9,
+      "review": 21,
+      "helpful": true,
+      "awesome": false,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 3,
+    "fields": {
+      "user": 9,
+      "review": 20,
+      "helpful": true,
+      "awesome": false,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 4,
+    "fields": {
+      "user": 9,
+      "review": 19,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 5,
+    "fields": {
+      "user": 9,
+      "review": 15,
+      "helpful": true,
+      "awesome": false,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 6,
+    "fields": {
+      "user": 9,
+      "review": 5,
+      "helpful": true,
+      "awesome": false,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 7,
+    "fields": {
+      "user": 4,
+      "review": 16,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 8,
+    "fields": {
+      "user": 4,
+      "review": 14,
+      "helpful": true,
+      "awesome": false,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 9,
+    "fields": {
+      "user": 4,
+      "review": 5,
+      "helpful": true,
+      "awesome": false,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 10,
+    "fields": {
+      "user": 4,
+      "review": 6,
+      "helpful": true,
+      "awesome": false,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 11,
+    "fields": {
+      "user": 15,
+      "review": 14,
+      "helpful": false,
+      "awesome": false,
+      "random": true
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 12,
+    "fields": {
+      "user": 15,
+      "review": 11,
+      "helpful": true,
+      "awesome": false,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 13,
+    "fields": {
+      "user": 15,
+      "review": 17,
+      "helpful": false,
+      "awesome": false,
+      "random": true
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 14,
+    "fields": {
+      "user": 8,
+      "review": 18,
+      "helpful": true,
+      "awesome": false,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 15,
+    "fields": {
+      "user": 8,
+      "review": 7,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 16,
+    "fields": {
+      "user": 6,
+      "review": 18,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 17,
+    "fields": {
+      "user": 6,
+      "review": 4,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 18,
+    "fields": {
+      "user": 13,
+      "review": 12,
+      "helpful": true,
+      "awesome": false,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 19,
+    "fields": {
+      "user": 13,
+      "review": 13,
+      "helpful": false,
+      "awesome": false,
+      "random": true
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 20,
+    "fields": {
+      "user": 3,
+      "review": 10,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 21,
+    "fields": {
+      "user": 3,
+      "review": 15,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 22,
+    "fields": {
+      "user": 3,
+      "review": 6,
+      "helpful": false,
+      "awesome": false,
+      "random": true
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 23,
+    "fields": {
+      "user": 16,
+      "review": 14,
+      "helpful": true,
+      "awesome": false,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 24,
+    "fields": {
+      "user": 16,
+      "review": 22,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 25,
+    "fields": {
+      "user": 1,
+      "review": 21,
+      "helpful": true,
+      "awesome": false,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 26,
+    "fields": {
+      "user": 1,
+      "review": 15,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 27,
+    "fields": {
+      "user": 12,
+      "review": 5,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 28,
+    "fields": {
+      "user": 12,
+      "review": 4,
+      "helpful": true,
+      "awesome": false,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 29,
+    "fields": {
+      "user": 12,
+      "review": 18,
+      "helpful": true,
+      "awesome": false,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 30,
+    "fields": {
+      "user": 11,
+      "review": 18,
+      "helpful": false,
+      "awesome": false,
+      "random": true
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 31,
+    "fields": {
+      "user": 11,
+      "review": 20,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 32,
+    "fields": {
+      "user": 13,
+      "review": 19,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 33,
+    "fields": {
+      "user": 12,
+      "review": 17,
+      "helpful": false,
+      "awesome": false,
+      "random": true
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 34,
+    "fields": {
+      "user": 1,
+      "review": 4,
+      "helpful": false,
+      "awesome": false,
+      "random": true
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 35,
+    "fields": {
+      "user": 1,
+      "review": 25,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 36,
+    "fields": {
+      "user": 1,
+      "review": 2,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 37,
+    "fields": {
+      "user": 1,
+      "review": 22,
+      "helpful": true,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 38,
+    "fields": {
+      "user": 1,
+      "review": 8,
+      "helpful": true,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 45,
+    "fields": {
+      "user": 1,
+      "review": 34,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 46,
+    "fields": {
+      "user": 1,
+      "review": 11,
+      "helpful": true,
+      "awesome": true,
+      "random": true
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 47,
+    "fields": {
+      "user": 1,
+      "review": 6,
+      "helpful": true,
+      "awesome": false,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 48,
+    "fields": {
+      "user": 1,
+      "review": 20,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 52,
+    "fields": {
+      "user": 17,
+      "review": 124,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 53,
+    "fields": {
+      "user": 1,
+      "review": 124,
+      "helpful": true,
+      "awesome": false,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 54,
+    "fields": {
+      "user": 1,
+      "review": 16,
+      "helpful": false,
+      "awesome": false,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 55,
+    "fields": {
+      "user": 1,
+      "review": 13,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 56,
+    "fields": {
+      "user": 1,
+      "review": 127,
+      "helpful": true,
+      "awesome": false,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 57,
+    "fields": {
+      "user": 1,
+      "review": 126,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 58,
+    "fields": {
+      "user": 1,
+      "review": 14,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "opinions.opinion",
+    "pk": 59,
+    "fields": {
+      "user": 1,
+      "review": 155,
+      "helpful": false,
+      "awesome": true,
+      "random": false
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 1,
+    "fields": {
+      "content": "Found this place down the street from our hotel. First time having currywurst and it was excellent!",
+      "rating": 4,
+      "date_created": "2018-08-20T06:28:20Z",
+      "date_modified": "2018-08-20T06:28:23Z",
+      "user": 7,
+      "restaurant": 9,
+      "has_changing_table": false,
+      "place_for_stroller": true,
+      "isNoisy": true,
+      "friendly_waiting_staff": true,
+      "high_chair": false,
+      "are_there_steps": false,
+      "has_tablecloth": false,
+      "has_quick_service": true,
+      "price_level": 2
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 2,
+    "fields": {
+      "content": "Pretty cool burger place - seating both inside and outside.",
+      "rating": 3,
+      "date_created": "2018-08-20T06:33:32Z",
+      "date_modified": "2018-08-20T06:33:36Z",
+      "user": 7,
+      "restaurant": 4,
+      "has_changing_table": false,
+      "place_for_stroller": true,
+      "isNoisy": true,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": false,
+      "has_quick_service": true,
+      "price_level": 3
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 3,
+    "fields": {
+      "content": "Love the mini Prussians, the truffle cake is OUT of this world!",
+      "rating": 4,
+      "date_created": "2018-08-20T06:35:43Z",
+      "date_modified": "2018-08-20T06:36:50Z",
+      "user": 10,
+      "restaurant": 20,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": false,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": false,
+      "has_tablecloth": false,
+      "has_quick_service": true,
+      "price_level": 2
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 4,
+    "fields": {
+      "content": "Super cozy cafe mixed with an interesting bookstore.",
+      "rating": 3,
+      "date_created": "2018-08-20T06:38:59Z",
+      "date_modified": "2018-08-20T06:39:00Z",
+      "user": 10,
+      "restaurant": 14,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": true,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": false,
+      "has_quick_service": false,
+      "price_level": 3
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 5,
+    "fields": {
+      "content": "Service was good, very pleasant staff, but overall the meal was a let down, and very expensive.",
+      "rating": 1,
+      "date_created": "2018-08-20T06:41:18Z",
+      "date_modified": "2018-08-20T06:41:19Z",
+      "user": 17,
+      "restaurant": 10,
+      "has_changing_table": false,
+      "place_for_stroller": false,
+      "isNoisy": false,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": false,
+      "has_quick_service": false,
+      "price_level": 4
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 6,
+    "fields": {
+      "content": "it's worth a visit, and certainly if you're looking for something quick and inexpensive to eat",
+      "rating": 3,
+      "date_created": "2018-08-20T06:43:43Z",
+      "date_modified": "2018-08-20T06:43:45Z",
+      "user": 17,
+      "restaurant": 13,
+      "has_changing_table": false,
+      "place_for_stroller": true,
+      "isNoisy": true,
+      "friendly_waiting_staff": false,
+      "high_chair": true,
+      "are_there_steps": false,
+      "has_tablecloth": false,
+      "has_quick_service": true,
+      "price_level": 2
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 7,
+    "fields": {
+      "content": "The place was very inviting, and it offered full kitchen service for longer with very nice staff",
+      "rating": 3,
+      "date_created": "2018-08-20T06:46:40Z",
+      "date_modified": "2018-08-20T06:46:41Z",
+      "user": 14,
+      "restaurant": 7,
+      "has_changing_table": false,
+      "place_for_stroller": false,
+      "isNoisy": true,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": false,
+      "has_quick_service": true,
+      "price_level": 2
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 8,
+    "fields": {
+      "content": "Das Essen war gut, jedoch nichts besonderes  und kostete 29,- CHF",
+      "rating": 1,
+      "date_created": "2018-08-20T06:48:26Z",
+      "date_modified": "2018-08-20T06:48:28Z",
+      "user": 14,
+      "restaurant": 5,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": false,
+      "friendly_waiting_staff": false,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": true,
+      "has_quick_service": false,
+      "price_level": 3
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 9,
+    "fields": {
+      "content": "Great location and bar, unfortunately one employee thinks she can load her crappy,  stressed out!",
+      "rating": 2,
+      "date_created": "2018-08-20T06:50:48Z",
+      "date_modified": "2018-08-20T06:50:52Z",
+      "user": 14,
+      "restaurant": 22,
+      "has_changing_table": false,
+      "place_for_stroller": true,
+      "isNoisy": true,
+      "friendly_waiting_staff": false,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": false,
+      "has_quick_service": false,
+      "price_level": 3
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 10,
+    "fields": {
+      "content": "We ordered our food two hours ago. It still isn't here.",
+      "rating": 1,
+      "date_created": "2018-08-20T06:52:18Z",
+      "date_modified": "2018-08-20T06:52:20Z",
+      "user": 17,
+      "restaurant": 8,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": true,
+      "friendly_waiting_staff": false,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": false,
+      "has_quick_service": false,
+      "price_level": 3
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 11,
+    "fields": {
+      "content": "As a vegetarian, I very much appreciated the wide variety of proteins available",
+      "rating": 3,
+      "date_created": "2018-08-20T06:54:43Z",
+      "date_modified": "2018-08-20T06:54:44Z",
+      "user": 7,
+      "restaurant": 3,
+      "has_changing_table": false,
+      "place_for_stroller": false,
+      "isNoisy": true,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": true,
+      "has_quick_service": true,
+      "price_level": 3
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 12,
+    "fields": {
+      "content": "They used healthy ingredients and delicious seasonings. Loved every bite!",
+      "rating": 4,
+      "date_created": "2018-08-20T06:56:19Z",
+      "date_modified": "2018-08-20T06:56:20Z",
+      "user": 7,
+      "restaurant": 1,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": false,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": false,
+      "has_quick_service": true,
+      "price_level": 2
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 13,
+    "fields": {
+      "content": "The setup is a bit of a mosh pit but I like the casualness of the whole place.",
+      "rating": 2,
+      "date_created": "2018-08-20T06:58:18Z",
+      "date_modified": "2018-08-20T06:58:22Z",
+      "user": 10,
+      "restaurant": 6,
+      "has_changing_table": false,
+      "place_for_stroller": false,
+      "isNoisy": true,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": false,
+      "has_quick_service": true,
+      "price_level": 2
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 14,
+    "fields": {
+      "content": "Excellent outside seating area, located in a calm neighborhood",
+      "rating": 3,
+      "date_created": "2018-08-20T06:59:44Z",
+      "date_modified": "2018-08-20T06:59:45Z",
+      "user": 17,
+      "restaurant": 16,
+      "has_changing_table": false,
+      "place_for_stroller": true,
+      "isNoisy": false,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": false,
+      "has_quick_service": true,
+      "price_level": 2
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 15,
+    "fields": {
+      "content": "you're watching your kids play in the fountain, enjoying a beer, ice cream, or dinner!",
+      "rating": 4,
+      "date_created": "2018-08-20T07:01:35Z",
+      "date_modified": "2018-08-20T07:01:37Z",
+      "user": 7,
+      "restaurant": 21,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": false,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": false,
+      "has_tablecloth": false,
+      "has_quick_service": true,
+      "price_level": 2
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 16,
+    "fields": {
+      "content": "Great place for casual day drinks with friends on a nice day!",
+      "rating": 3,
+      "date_created": "2018-08-20T07:02:51Z",
+      "date_modified": "2018-08-20T07:02:53Z",
+      "user": 14,
+      "restaurant": 2,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": false,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": false,
+      "has_tablecloth": false,
+      "has_quick_service": true,
+      "price_level": 3
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 17,
+    "fields": {
+      "content": "Cannot review because it was too crowded and we couldn't find a spot",
+      "rating": 2,
+      "date_created": "2018-08-20T07:05:07Z",
+      "date_modified": "2018-08-20T07:05:09Z",
+      "user": 5,
+      "restaurant": 18,
+      "has_changing_table": false,
+      "place_for_stroller": false,
+      "isNoisy": true,
+      "friendly_waiting_staff": true,
+      "high_chair": false,
+      "are_there_steps": true,
+      "has_tablecloth": false,
+      "has_quick_service": false,
+      "price_level": 2
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 18,
+    "fields": {
+      "content": "Very good coffee including soy cappuccino!",
+      "rating": 3,
+      "date_created": "2018-08-20T07:06:59Z",
+      "date_modified": "2018-08-20T07:06:57Z",
+      "user": 10,
+      "restaurant": 15,
+      "has_changing_table": false,
+      "place_for_stroller": false,
+      "isNoisy": true,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": false,
+      "has_quick_service": true,
+      "price_level": 3
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 19,
+    "fields": {
+      "content": "Friendly staff. DELICIOUS espresso. Huge work space.",
+      "rating": 3,
+      "date_created": "2018-08-20T07:08:57Z",
+      "date_modified": "2018-08-20T07:08:58Z",
+      "user": 5,
+      "restaurant": 19,
+      "has_changing_table": false,
+      "place_for_stroller": false,
+      "isNoisy": false,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": false,
+      "has_quick_service": true,
+      "price_level": 2
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 20,
+    "fields": {
+      "content": "Food was good, not great to demand that kind of money.",
+      "rating": 2,
+      "date_created": "2018-08-20T07:10:25Z",
+      "date_modified": "2018-08-20T07:10:26Z",
+      "user": 7,
+      "restaurant": 11,
+      "has_changing_table": true,
+      "place_for_stroller": false,
+      "isNoisy": false,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": true,
+      "has_quick_service": false,
+      "price_level": 4
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 21,
+    "fields": {
+      "content": "Not so big, not too small.  Very casual outdoor seating",
+      "rating": 3,
+      "date_created": "2018-08-20T07:12:12Z",
+      "date_modified": "2018-08-20T07:12:13Z",
+      "user": 10,
+      "restaurant": 17,
+      "has_changing_table": false,
+      "place_for_stroller": true,
+      "isNoisy": false,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": false,
+      "has_tablecloth": false,
+      "has_quick_service": false,
+      "price_level": 2
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 22,
+    "fields": {
+      "content": "The restaurant is very cozy and nicely decorated.",
+      "rating": 2,
+      "date_created": "2018-08-20T07:14:18Z",
+      "date_modified": "2018-08-20T07:14:20Z",
+      "user": 17,
+      "restaurant": 4,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": false,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": false,
+      "has_quick_service": true,
+      "price_level": 2
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 23,
+    "fields": {
+      "content": "Try evenings, they have live music events",
+      "rating": 3,
+      "date_created": "2018-08-20T07:32:21Z",
+      "date_modified": "2018-08-20T07:32:23Z",
+      "user": 17,
+      "restaurant": 9,
+      "has_changing_table": false,
+      "place_for_stroller": true,
+      "isNoisy": true,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": false,
+      "has_quick_service": true,
+      "price_level": 2
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 24,
+    "fields": {
+      "content": "Needless to say the front desk was hardly any help and my concerns fell on deaf ears !!",
+      "rating": 1,
+      "date_created": "2018-08-20T07:34:04Z",
+      "date_modified": "2018-08-20T07:34:06Z",
+      "user": 7,
+      "restaurant": 10,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": false,
+      "friendly_waiting_staff": false,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": true,
+      "has_quick_service": false,
+      "price_level": 4
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 25,
+    "fields": {
+      "content": "The staff was very pleasant and accommodating.",
+      "rating": 3,
+      "date_created": "2018-08-20T07:35:37Z",
+      "date_modified": "2018-08-20T07:35:38Z",
+      "user": 14,
+      "restaurant": 10,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": false,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": true,
+      "has_quick_service": false,
+      "price_level": 4
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 26,
+    "fields": {
+      "content": "The accompanying cappuccino was also good although there are better options throughout the city.",
+      "rating": 2,
+      "date_created": "2018-08-20T07:38:12Z",
+      "date_modified": "2018-08-20T07:37:25Z",
+      "user": 5,
+      "restaurant": 20,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": false,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": false,
+      "has_tablecloth": false,
+      "has_quick_service": true,
+      "price_level": 2
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 34,
+    "fields": {
+      "content": "Excellent lunch here with a very fine menu. Something for everyone.",
+      "rating": 4,
+      "date_created": "2018-08-28T12:07:46Z",
+      "date_modified": "2018-08-28T12:07:47Z",
+      "user": 1,
+      "restaurant": 3,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": false,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": false,
+      "has_tablecloth": false,
+      "has_quick_service": true,
+      "price_level": 2
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 124,
+    "fields": {
+      "content": "The dinner here was also good, but a little bit on the pricy side",
+      "rating": 3,
+      "date_created": "2018-08-31T09:06:28.411Z",
+      "date_modified": "2018-08-31T09:06:28.411Z",
+      "user": 17,
+      "restaurant": 11,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": false,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": true,
+      "has_quick_service": true,
+      "price_level": 4
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 125,
+    "fields": {
+      "content": "The restaurant was located on the first floor of the hotel and was very clean and pleasant.",
+      "rating": 3,
+      "date_created": "2018-08-31T09:08:00.498Z",
+      "date_modified": "2018-08-31T09:08:00.498Z",
+      "user": 17,
+      "restaurant": 3,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": true,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": false,
+      "has_tablecloth": false,
+      "has_quick_service": false,
+      "price_level": 2
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 126,
+    "fields": {
+      "content": "dscadsc",
+      "rating": 2,
+      "date_created": "2018-08-31T09:09:50.027Z",
+      "date_modified": "2018-08-31T09:09:50.027Z",
+      "user": 17,
+      "restaurant": 12,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": true,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": true,
+      "has_quick_service": true,
+      "price_level": 2
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 127,
+    "fields": {
+      "content": "Beautiful location and space, with very good service, but the food was OK in regards to the price.",
+      "rating": 3,
+      "date_created": "2018-08-31T09:11:33.576Z",
+      "date_modified": "2018-08-31T09:11:33.576Z",
+      "user": 17,
+      "restaurant": 5,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": true,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": true,
+      "has_quick_service": true,
+      "price_level": 4
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 128,
+    "fields": {
+      "content": "The food was beautifully presented and tasted quite good, but the service was a bit slow.",
+      "rating": 3,
+      "date_created": "2018-08-31T09:13:39.203Z",
+      "date_modified": "2018-08-31T09:13:39.203Z",
+      "user": 17,
+      "restaurant": 18,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": false,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": false,
+      "has_tablecloth": null,
+      "has_quick_service": false,
+      "price_level": 2
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 137,
+    "fields": {
+      "content": "Great service and reasonably priced menu.",
+      "rating": 3,
+      "date_created": "2018-08-31T10:11:12.850Z",
+      "date_modified": "2018-08-31T10:11:12.850Z",
+      "user": 1,
+      "restaurant": 12,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": false,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": false,
+      "has_quick_service": true,
+      "price_level": 2
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 150,
+    "fields": {
+      "content": "the best ever review",
+      "rating": 5,
+      "date_created": "2018-08-31T14:29:10.997Z",
+      "date_modified": "2018-08-31T14:29:10.997Z",
+      "user": 1,
+      "restaurant": 2,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": false,
+      "friendly_waiting_staff": null,
+      "high_chair": null,
+      "are_there_steps": false,
+      "has_tablecloth": null,
+      "has_quick_service": null,
+      "price_level": 3
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 154,
+    "fields": {
+      "content": "Great atmosphere but poor service",
+      "rating": 2,
+      "date_created": "2018-08-31T14:53:13.733Z",
+      "date_modified": "2018-08-31T14:53:13.733Z",
+      "user": 3,
+      "restaurant": 11,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": false,
+      "friendly_waiting_staff": false,
+      "high_chair": true,
+      "are_there_steps": false,
+      "has_tablecloth": true,
+      "has_quick_service": false,
+      "price_level": 3
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 155,
+    "fields": {
+      "content": "The servers have no clue what they are doing so when it gets crowded",
+      "rating": 1,
+      "date_created": "2018-08-31T14:59:22.581Z",
+      "date_modified": "2018-08-31T14:59:22.581Z",
+      "user": 8,
+      "restaurant": 11,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": true,
+      "friendly_waiting_staff": false,
+      "high_chair": true,
+      "are_there_steps": false,
+      "has_tablecloth": true,
+      "has_quick_service": false,
+      "price_level": 3
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 156,
+    "fields": {
+      "content": "Fantastic decor, discrete service, fresh and tasty food makes this restaurant a must go to",
+      "rating": 4,
+      "date_created": "2018-08-31T15:00:41.671Z",
+      "date_modified": "2018-08-31T15:00:41.671Z",
+      "user": 9,
+      "restaurant": 11,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": false,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": false,
+      "has_tablecloth": true,
+      "has_quick_service": true,
+      "price_level": 4
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 157,
+    "fields": {
+      "content": "the food is fresh but too spicy for little one!",
+      "rating": 2,
+      "date_created": "2018-08-31T15:01:57.361Z",
+      "date_modified": "2018-08-31T15:01:57.361Z",
+      "user": 2,
+      "restaurant": 11,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": true,
+      "friendly_waiting_staff": false,
+      "high_chair": true,
+      "are_there_steps": false,
+      "has_tablecloth": true,
+      "has_quick_service": false,
+      "price_level": 4
+    }
+  },
+  {
+    "model": "review.review",
+    "pk": 158,
+    "fields": {
+      "content": "Good coffees, freshly made sandwiches and a positive vibe.",
+      "rating": 3,
+      "date_created": "2018-08-31T15:04:41.920Z",
+      "date_modified": "2018-08-31T15:04:41.920Z",
+      "user": 8,
+      "restaurant": 14,
+      "has_changing_table": true,
+      "place_for_stroller": true,
+      "isNoisy": false,
+      "friendly_waiting_staff": true,
+      "high_chair": true,
+      "are_there_steps": true,
+      "has_tablecloth": true,
+      "has_quick_service": true,
+      "price_level": 3
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 1,
+    "fields": {
+      "name": "Lilly Jo",
+      "category": "cafe",
+      "country": "Switzerland",
+      "street": "Pfingstweidstrasse 16",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": "lilly-jo.ch",
+      "phone": "+41 43 543 63 51",
+      "opening_hours": "Mon 7:00 am - 5:00 pm\t\r\nTue\t7:00 am - 5:00 pm\t\r\nWed 7:00 am - 5:00 pm\t\r\nThu\t7:00 am - 5:00 pm\t\r\nFri 7:00 am - 5:00 pm\tOpen now\r\nSat\tClosed\t\r\nSun\tClosed",
+      "image": "restaurant/Lilly_jo.jpg",
+      "credit_card": false,
+      "take_reservation": true,
+      "kids_menu": true,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 2,
+    "fields": {
+      "name": "Frau Gerolds Garten",
+      "category": "fast_food",
+      "country": "Switzerland",
+      "street": "Geroldstrasse 23",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": "geroldgarten.ch",
+      "phone": "+41439603707",
+      "opening_hours": "Mon 11:00 am - 12:00 am\t\r\nTue\t11:00 am - 12:00 am\t\r\nWed 11:00 am - 12:00 am\t\r\nThu\t11:00 am - 12:00 am\t\r\nFri\t11:00 am - 12:00 am\r\nSat\t11:00 am - 12:00 am\t\r\nSun\t12:00 pm - 10:00 pm",
+      "image": "restaurant/Frau_Gerolds_Garten.jpg",
+      "credit_card": false,
+      "take_reservation": true,
+      "kids_menu": false,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 3,
+    "fields": {
+      "name": "naanu",
+      "category": "restaurant",
+      "country": "Switzerland",
+      "street": "Pfingstweidstrasse 104",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": "naanu.ch",
+      "phone": "+4144 2711012",
+      "opening_hours": "Mon 9:00 am - 5:00 pm\t\r\nTue 9:00 am - 5:00 pm\t\r\nWed 9:00 am - 5:00 pm\t\r\nThu\t9:00 am - 2:30 pm and 5:00 pm - 10:00 pm\t\r\nFri\t9:00 am - 2:30 pm and 5:00 pm - 10:00 pm\r\nSat\t5:00 pm - 11:00 pm\t\r\nSun\tClosed",
+      "image": "restaurant/nanu.jpg",
+      "credit_card": true,
+      "take_reservation": false,
+      "kids_menu": false,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 4,
+    "fields": {
+      "name": "The Bite",
+      "category": "fast_food",
+      "country": "Switzerland",
+      "street": "Brauerstrasse 15",
+      "city": "Z\u00fcrich",
+      "ZIP": "8004",
+      "website": "http://www.thebite.ch",
+      "phone": "+41442423000",
+      "opening_hours": "Mon\tClosed\t\r\nTue\t11:30 am - 1:30 pm and 6:00 pm - 10:00 pm\t\r\nWed 11:30 am - 1:30 pm and 6:00 pm - 10:00 pm\t\r\nThu\t11:30 am - 1:30 pm and 6:00 pm - 10:00 pm\t\r\nFri 11:30 am - 1:30 pm and 6:00 pm - 10:30 pm\r\nSat\t5:30 pm - 10:30 pm\r\nSun\tClosed",
+      "image": "restaurant/The_bite_re.jpg",
+      "credit_card": true,
+      "take_reservation": true,
+      "kids_menu": false,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 5,
+    "fields": {
+      "name": "Novotelcaf\u00e9",
+      "category": "restaurant",
+      "country": "Switzerland",
+      "street": "Schiffbaustrasse 13",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": null,
+      "phone": "+41442762272",
+      "opening_hours": "empty",
+      "image": "restaurant/Henrici.jpg",
+      "credit_card": true,
+      "take_reservation": true,
+      "kids_menu": true,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 6,
+    "fields": {
+      "name": "les halles",
+      "category": "fast_food",
+      "country": "Switzerland",
+      "street": "Pfingstweidstrasse 6",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": "halles.ch",
+      "phone": "435436351",
+      "opening_hours": "Mon 11:00 am - 11:30 pm\t\r\nTue 11:00 am - 11:30 pm\t\r\nWed 11:00 am - 11:30 pm\t\r\nThu\t11:00 am - 1:00 am\t\r\nFri\t11:00 am - 2:00 am\r\nSat\t11:00 am - 2:00 am\t\r\nSun\tClosed",
+      "image": "restaurant/les_halles.jpg",
+      "credit_card": false,
+      "take_reservation": true,
+      "kids_menu": false,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 7,
+    "fields": {
+      "name": "Pi\u00f9",
+      "category": "fast_food",
+      "country": "Switzerland",
+      "street": "Hardstrasse 259",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": "piu-ristorante.ch",
+      "phone": "+41433669050",
+      "opening_hours": "Mon 9:00 am - 11:30 pm\t\r\nTue 9:00 am - 11:30 pm\t\r\nWed 9:00 am - 11:30 pm\t\r\nThu 9:00 am - 11:30 pm\t\r\nFri 9:00 am - 11:45 pm\r\nSat 9:00 am - 11:45 pm\t\r\nSun 9:00 am - 11:00 pm",
+      "image": "restaurant/Piu.jpg",
+      "credit_card": true,
+      "take_reservation": true,
+      "kids_menu": true,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 8,
+    "fields": {
+      "name": "Nooch",
+      "category": "fast_food",
+      "country": "Switzerland",
+      "street": "Steinfelsareal",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": "www.nooch.ch",
+      "phone": "+41 43 366 85 35",
+      "opening_hours": "Mon 11:00 am - 11:00 pm\t\r\nTue 11:00 am - 11:00 pm\t\r\nWed 11:00 am - 11:00 pm\t\r\nThu\t11:00 am - 11:00 pm\t\r\nFri 11:00 am - 12:00 am\r\nSat 12:00 pm - 12:00 am\t\r\nSun\t12:00 pm - 11:00 pm",
+      "image": "restaurant/Nooch.jpg",
+      "credit_card": true,
+      "take_reservation": true,
+      "kids_menu": false,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 9,
+    "fields": {
+      "name": "Wurst & Moritz",
+      "category": "fast_food",
+      "country": "Switzerland",
+      "street": "Hardstrasse 318",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": "http://www.wurstundmoritz.com",
+      "phone": "+41 43 540 41 47",
+      "opening_hours": "Mon - Sat :  8:00 am - 10:00 pm / Sun: Closed",
+      "image": "restaurant/wurst_moritz.jpg",
+      "credit_card": false,
+      "take_reservation": true,
+      "kids_menu": false,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 10,
+    "fields": {
+      "name": "Route Twenty-Six",
+      "category": "restaurant",
+      "country": "Switzerland",
+      "street": "Pfingstweidstrasse 100",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": "https://www.routetwentysix.ch",
+      "phone": "+41 44 285 40 41",
+      "opening_hours": "Mon 6:30 am - 10:00 am and 11:30 am - 2:00 pm and 6:00 pm - 10:00 pm\t\r\nTue\t6:30 am - 10:00 am and 11:30 am - 2:00 pm and 6:00 pm - 10:00 pm\t\r\nWed 6:30 am - 10:00 am and 11:30 am - 2:00 pm and 6:00 pm - 10:00 pm\t\r\nThu\t6:30 am - 10:00 am and 11:30 am - 2:00 pm and 6:00 pm - 10:00 pm\t\r\nFri\t6:30 am - 10:00 am and 11:30 am - 2:00 pm and 6:00 pm - 10:00 pm\r\nSat\t6:30 am - 11:30 am and 6:00 pm - 10:00 pm\t\r\nSun\t6:30 am - 11:30 am and 6:00 pm - 10:00 pm",
+      "image": "restaurant/route_twenty_six.jpg",
+      "credit_card": true,
+      "take_reservation": true,
+      "kids_menu": false,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 11,
+    "fields": {
+      "name": "Angkor",
+      "category": "restaurant",
+      "country": "Switzerland",
+      "street": "Giessereistrasse 18",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": "restaurant-angkor.ch",
+      "phone": "+41 43 205 28 88",
+      "opening_hours": "Mon 11:30 am - 2:00 pm and 6:00 pm - 11:00 pm\t\r\nTue\t11:30 am - 2:00 pm and 6:00 pm - 11:00 pm\t\r\nWed 11:30 am - 2:00 pm and 6:00 pm - 11:00 pm \r\nThu\t11:30 am - 2:00 pm and 6:00 pm - 11:00 pm\t\r\nFri\t11:30 am - 2:00 pm and 6:00 pm - 11:00 pm\r\nSat\t6:00 pm - 11:00 pm\t\r\nSun\tClosed",
+      "image": "restaurant/Angkor.jpg",
+      "credit_card": true,
+      "take_reservation": true,
+      "kids_menu": true,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 12,
+    "fields": {
+      "name": "Noodle House",
+      "category": "restaurant",
+      "country": "Switzerland",
+      "street": "Giessereistrasse 18",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": "www.noodlehouse.ch",
+      "phone": "+41 43 205 28 88",
+      "opening_hours": "none",
+      "image": "restaurant/noodleHause.jpg",
+      "credit_card": true,
+      "take_reservation": false,
+      "kids_menu": false,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 13,
+    "fields": {
+      "name": "Restaurant Markthalle",
+      "category": "restaurant",
+      "country": "Switzerland",
+      "street": "Limmatstrasse 231",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": "http://www.restaurant-markthalle.ch/",
+      "phone": "+41 44 201 00 60",
+      "opening_hours": "Mon 9:00 am - 11:00 pm\t\r\nTue\t9:00 am - 12:00 am\t\r\nWed 9:00 am - 12:00 am\t\r\nThu\t9:00 am - 12:00 am\t\r\nFri\t9:00 am - 12:00 am\r\nSat\t9:00 am - 12:00 am\t\r\nSun\tClosed",
+      "image": "restaurant/Restaurant_Markthall.jpg",
+      "credit_card": true,
+      "take_reservation": true,
+      "kids_menu": false,
+      "user": 1
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 14,
+    "fields": {
+      "name": "Sph\u00e8res",
+      "category": "cafe",
+      "country": "Switzerland",
+      "street": "Hardturmstrasse 66",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": "https://spheres.cc/",
+      "phone": "+41 44 440 66 22",
+      "opening_hours": "Mon 8:00 am - 12:00 am\t\r\nTue\t8:00 am - 12:00 am\t\r\nWed 8:00 am - 12:00 am\t\r\nThu\t8:00 am - 12:00 am\t\r\nFri\t8:00 am - 12:00 am\r\nSat\t9:30 am - 7:30 pm\t\r\nSun\t9:30 am - 7:30 pm",
+      "image": "restaurant/Spheres.jpg",
+      "credit_card": true,
+      "take_reservation": false,
+      "kids_menu": true,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 15,
+    "fields": {
+      "name": "Cafe Noir",
+      "category": "cafe",
+      "country": "Switzerland",
+      "street": "Neugasse 33",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": "cafe-noir.ch",
+      "phone": "+41 44 558 34 10",
+      "opening_hours": "Mon 7:00 am - 8:00 pm\t\r\nTue\t7:00 am - 8:00 pm\t\r\nWed 7:00 am - 8:00 pm\t\r\nThu\t7:00 am - 8:00 pm\t\r\nFri\t7:00 am - 8:00 pm\r\nSat\t9:00 am - 6:00 pm\t\r\nSun\tClosed",
+      "image": "restaurant/Cafe_Noir.jpg",
+      "credit_card": false,
+      "take_reservation": false,
+      "kids_menu": true,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 16,
+    "fields": {
+      "name": "Kafi Dihei",
+      "category": "cafe",
+      "country": "Switzerland",
+      "street": "Zurlindenstrasse 231",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": "kafidihei.ch",
+      "phone": "+41 44 557 43 48",
+      "opening_hours": "Mon 8:30 am - 10:00 pm\t\r\nTue\tClosed\t\r\nWed 8:30 am - 10:00 pm\t\r\nThu\t8:30 am - 10:00 pm\t\r\nFri\t8:30 am - 10:00 pm\r\nSat\t9:00 am - 6:00 pm\t\r\nSun\t9:00 am - 6:00 pm",
+      "image": "restaurant/Kafi_Dihei.jpg",
+      "credit_card": true,
+      "take_reservation": true,
+      "kids_menu": false,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 17,
+    "fields": {
+      "name": "Ambrosi",
+      "category": "cafe",
+      "country": "Switzerland",
+      "street": "Viaduktstrasse 37",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": "ambrosi.ch",
+      "phone": "+41 43 960 36 06",
+      "opening_hours": "Mon 8:00 am - 12:00 am\t\r\nTue 8:00 am - 12:00 am\t\r\nWed 8:00 am - 12:00 am\t\r\nThu\t8:00 am - 12:00 am\t\r\nFri 8:00 am - 2:00 am\r\nSat\t10:00 am - 2:00 am\t\r\nSun\t10:00 am - 12:00 am",
+      "image": "restaurant/Ambrosi.jpg",
+      "credit_card": false,
+      "take_reservation": true,
+      "kids_menu": false,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 18,
+    "fields": {
+      "name": "Coppolini",
+      "category": "cafe",
+      "country": "Switzerland",
+      "street": "Pfingstweidstrasse 102",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": "coppolini.ch",
+      "phone": "+41 44 928 21 10",
+      "opening_hours": "Mon 9:00 am - 3:00 pm\t\r\nTue\t9:00 am - 3:00 pm\t\r\nWed 9:00 am - 3:00 pm\t\r\nThu\t9:00 am - 11:00 pm\t\r\nFri\t9:00 am - 11:00 pm\r\nSat\t6:00 pm - 11:00 pm\t\r\nSun\tClosed",
+      "image": "restaurant/Coppolini.jpg",
+      "credit_card": true,
+      "take_reservation": true,
+      "kids_menu": true,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 19,
+    "fields": {
+      "name": "Auer & Co.",
+      "category": "cafe",
+      "country": "Switzerland",
+      "street": "Sihlquai 131",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": null,
+      "phone": "+41 79 689 27 77",
+      "opening_hours": "Mon 8:00 am - 10:00 pm\t\r\nTue\t8:00 am - 10:00 pm\t\r\nWed 8:00 am - 10:00 pm\t\r\nThu\t8:00 am - 1:00 am\t\r\nFri\t8:00 am - 1:00 am\r\nSat\t10:00 am - 7:00 pm\t\r\nSun\t10:00 am - 7:00 pm",
+      "image": "restaurant/Auer.jpg",
+      "credit_card": false,
+      "take_reservation": false,
+      "kids_menu": false,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 20,
+    "fields": {
+      "name": "Steiner Flughafebeck",
+      "category": "cafe",
+      "country": "Switzerland",
+      "street": "Turbinenstrasse 22",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": "https://www.flughafebeck.ch",
+      "phone": "+41 44 210 09 30",
+      "opening_hours": "Mon 6:30 am - 7:00 pm\t\r\nTue\t6:30 am - 7:00 pm\t\r\nWed 6:30 am - 7:00 pm\t\r\nThu\t6:30 am - 7:00 pm\t\r\nFri 6:30 am - 7:00 pm\r\nSat 7:00 am - 3:00 pm\t\r\nSun 8:00 am - 4:00 pm",
+      "image": "restaurant/Steiner_Flughafebeck_re.jpg",
+      "credit_card": false,
+      "take_reservation": false,
+      "kids_menu": true,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 21,
+    "fields": {
+      "name": "Josefwiese",
+      "category": "cafe",
+      "country": "Switzerland",
+      "street": "Josefstrasse 197",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": "kioskjosefwiese.ch",
+      "phone": "+41 44 272 94 71",
+      "opening_hours": "None",
+      "image": "restaurant/Josefwiese.jpg",
+      "credit_card": false,
+      "take_reservation": false,
+      "kids_menu": true,
+      "user": 2
+    }
+  },
+  {
+    "model": "restaurant.restaurant",
+    "pk": 22,
+    "fields": {
+      "name": "Nordbr\u00fccke",
+      "category": "cafe",
+      "country": "Switzerland",
+      "street": "Dammstrasse 58",
+      "city": "Z\u00fcrich",
+      "ZIP": "8005",
+      "website": "www.nordbruecke.ch",
+      "phone": "435436351",
+      "opening_hours": "Mon 4:00 pm - 1:00 am\t\r\nTue\t7:30 am - 1:00 am\t\r\nWed 7:30 am - 1:00 am\t\r\nThu\t7:30 am - 1:00 am\t\r\nFri 7:30 am - 2:00 am\t\r\nSat 9:00 am - 2:00 am\t\r\nSun 9:00 am - 12:00 am",
+      "image": "restaurant/Nordbreucke.jpg",
+      "credit_card": false,
+      "take_reservation": true,
+      "kids_menu": false,
+      "user": 2
+    }
+  }
+]
