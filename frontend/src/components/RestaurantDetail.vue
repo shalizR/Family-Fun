@@ -35,6 +35,9 @@
                 <div v-if="restaurantReviews">
                     <review-card v-for="review in restaurantReviews" :review="review"></review-card>
                 </div>
+                <div v-else>
+                    No reviews yet!
+                </div>
             </div>
         </div>
     </div>

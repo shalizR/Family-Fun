@@ -1,10 +1,10 @@
 <template>
     <div class="card">
-        <div class="card-content card-container">
+        <div class="card-content">
             <div class="media">
                 <div class="media-left">
                     <figure class="image is-48x48 user_pic">
-                        <img :src="$baseUrl + review.user.profile_pic" alt="user_image">
+                        <img :src="$baseUrl + review.user.profile_pic" alt="user_image" class="review-image">
                     </figure>
                 </div>
                 <div class="media-content">
@@ -156,10 +156,6 @@
 <style lang="scss" scoped>
     @import "~bulma";
 
-    .card-container {
-        width: 60%;
-    }
-
     .container {
         display: flex;
         width: 100%;
@@ -180,6 +176,11 @@
         display: flex;
         justify-content: space-between;
         width: 321px;
+    }
+
+    .review-image {
+        width: 70px !important;
+        height: 70px !important;
     }
 </style>
 

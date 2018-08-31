@@ -15,12 +15,12 @@
                 </div>
                 <div class="content content-container">
                     <div class="columns">
-                        <div class="column is-6">
+                        <div class="column is-10">
                             <p class="subtitle is-6">{{restaurant.street}}{{restaurant.ZIP}}, {{restaurant.city}}</p>
                             <p class="subtitle is-6">{{restaurant.phone}}</p>
                             <p class="subtitle is-6">{{restaurant.website}}</p>
                         </div>
-                        <div class="column is-6">
+                        <div class="column is-10">
                             <p v-if="restaurant.kids_menu">Kids menu: Yes</p>
                             <p v-else>Kids menu: No</p>
                             <p v-if="restaurant.take_reservation">Take reservation: Yes</p>
@@ -64,14 +64,15 @@
         width: auto !important;
     }
 
-    /*.card-container {*/
-        /*width: 40%;*/
-    /*}*/
+    .card-container {
+        width: 400px;
+        margin-bottom: 20px;
+    }
 
-    /*.content-container {*/
-        /*!*display: flex;*!*/
-        /*width: 50%;*/
-    /*}*/
+    .content-container {
+        /*display: flex;*/
+        width: 50%;
+    }
 
 </style>
 

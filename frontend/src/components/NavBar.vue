@@ -3,7 +3,7 @@
 <template>
 <nav class="navbar nav-color" role="navigation">
     <div class="navbar-start">
-      <figure class="navbar-item logo">
+      <figure class="navbar-item">
         <img src="../assets/family_fun.jpg" @click="goToHome" alt="Family-fun logo">
       </figure>
     </div>
@@ -67,11 +67,9 @@ export default {
         /*color: white;*/
 
     }
-    .logo {
-        height: 100%;
-        width: 100%;
-    }
+
     .navbar-item {
         color: white;
     }
+
 </style>

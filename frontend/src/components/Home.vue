@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <Search/>
-        <div class='columns is-multiline is-centered'>
+        <div class='columns is-multiline is-centered home-container'>
             <div class="column is-4" v-for="restaurant in restaurants" v-bind:key="restaurant.id">
                 <restaurant-card :restaurant="restaurant"/>
             </div>
@@ -36,5 +36,11 @@
 
 <style scoped>
     @import "~bulma";
+    .home-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
 
 </style>

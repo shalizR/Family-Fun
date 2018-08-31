@@ -1,31 +1,27 @@
 <template>
-    <div class="container">
-        <div class="columns">
-            <div class="column is-11">
-                <h1 class="title is-4">LOGIN</h1>
-                <div class="errors" v-if="errors.non_field_errors">
-                    {{errors.non_field_errors[0]}}
-                </div>
+    <div class="login-container">
+        <div>
+            <h1 class="title is-4">LOGIN</h1>
+            <div class="errors" v-if="errors.non_field_errors">
+                {{errors.non_field_errors[0]}}
             </div>
         </div>
-        <div class="columns">
-            <div class="column is-3">
+        <div class="login-inputs">
+            <div>
                 <input required class="input" type="text" placeholder="Username" v-model="username">
                 <div class="errors" v-if="errors.username">
                     {{errors.username[0]}}
                 </div>
             </div>
-            <div class="column is-3">
+            <div>
                 <input required class="input " type="password" placeholder="Password" v-model="password">
                 <div class="errors" v-if="errors.password">
                     {{errors.password[0]}}
                 </div>
             </div>
         </div>
-        <div class="columns">
-            <div class="column is-6 button-container">
-                <lu-button @click="handleLogin">Login</lu-button>
-            </div>
+        <div class="button-container">
+            <lu-button class="button-login" @click="handleLogin">Login</lu-button>
         </div>
     </div>
 </template>
@@ -34,14 +30,14 @@
     import {mapActions} from 'vuex'
 
     export default {
-        data() {
+        data () {
             return {
                 username: '',
                 password: ''
             }
         },
         computed: {
-            errors() {
+            errors () {
                 return this.$store.getters['login/getErrors']
             }
         },
@@ -53,15 +49,15 @@
                 'setLoggedIn'
             ]),
 
-            handleLogin() {
+            handleLogin () {
                 this.fetchToken({
                     username: this.username,
                     password: this.password
                 })
-                .then(() => this.setLoggedIn(true))
-                .then(() => {
-                  this.$router.push({ name: 'home' })
-                })
+                    .then(() => this.setLoggedIn(true))
+                    .then(() => {
+                        this.$router.push({name: 'home'})
+                    })
             }
         }
     }
@@ -70,24 +66,41 @@
 <style lang="scss" scoped>
     @import "../../node_modules/bulma";
 
-    .container {
+    .login-container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
         font-family: 'Varela Round', sans-serif;
+        height: 300px;
+        width: 500px;
+        margin: 0 auto;
     }
+
+    .login-inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+
+    }
+
     .button-container {
         display: flex;
-        justify-content: center;
-        justify-items: center;
+        justify-content: space-between;
     }
+
+    .button-login {
+        padding: 0 20px;
+    }
+
     .title {
         text-decoration: underline;
         text-decoration-color: #ffaf24;
         text-decoration-style: solid;
     }
+
     .errors {
-    color: red;
+        color: red;
     }
 </style>
