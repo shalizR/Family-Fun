@@ -47,6 +47,7 @@ const login = {
                         commit('setUserProfile', response.body)
                         return response
                     }).catch(err => {
+                        // just a comment
                         throw err
                     })
 
