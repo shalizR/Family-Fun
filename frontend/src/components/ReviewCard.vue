@@ -14,24 +14,24 @@
             </div>
             <div class="columns">
                 <div class="column">
-                    <h3 v-if="review.high_chair">High chairs? Yes</h3>
-                    <h3 v-else>High chairs? No</h3>
-                    <h3 v-if="review.are_there_steps">Steps? Yes</h3>
-                    <h3 v-else>Steps? No</h3>
-                    <h3 v-if="review.has_changing_table">Changing table for babies? Yes</h3>
-                    <h3 v-else>Changing table for babies? No</h3>
-                    <h3 v-if="review.has_quick_service">Quick service? Yes</h3>
+                    <h3 v-if="review.high_chair">High chairs? <strong>Yes</strong></h3>
+                    <h3 v-else>High chairs? <strong>No</strong></h3>
+                    <h3 v-if="review.are_there_steps">Steps? <strong>Yes</strong></h3>
+                    <h3 v-else>Steps? <strong>No</strong></h3>
+                    <h3 v-if="review.has_changing_table">Changing table for babies? <strong>Yes</strong></h3>
+                    <h3 v-else>Changing table for babies? <strong>No</strong></h3>
+                    <h3 v-if="review.has_quick_service">Quick service? <strong>Yes</strong></h3>
                     <h3 v-else>Quick service? No</h3>
                 </div>
                 <div class="column">
-                    <h3 v-if="review.place_for_stroller">Place for stroller? Yes</h3>
-                    <h3 v-else>Place for stroller? No</h3>
-                    <h3 v-if="review.isNoisy">Noisy? Yes</h3>
-                    <h3 v-else>Noisy: No</h3>
-                    <h3 v-if="review.friendly_waiting_staff">Friendly waiting staff? Yes</h3>
-                    <h3 v-else>Friendly waiting staff? No</h3>
-                    <h3 v-if="review.has_tablecloth">Has tablecloth? Yes</h3>
-                    <h3 v-else>Has tablecloth: No</h3>
+                    <h3 v-if="review.place_for_stroller">Place for stroller? <strong>Yes</strong></h3>
+                    <h3 v-else>Place for stroller? <strong>No</strong></h3>
+                    <h3 v-if="review.isNoisy">Noisy? <strong>Yes</strong></h3>
+                    <h3 v-else>Noisy: <strong>No</strong></h3>
+                    <h3 v-if="review.friendly_waiting_staff">Friendly waiting staff? <strong>Yes</strong></h3>
+                    <h3 v-else>Friendly waiting staff? <strong>No</strong></h3>
+                    <h3 v-if="review.has_tablecloth">Has tablecloth? <strong>Yes</strong></h3>
+                    <h3 v-else>Has tablecloth: <strong>No</strong></h3>
                 </div>
             </div>
 
@@ -181,6 +181,16 @@
         display: flex;
         justify-content: space-between;
         width: 321px;
+    }
+    strong{
+        float: right;
+    }
+    h3 {
+        border-bottom: 1px solid #ededed;
+        &:first-child {
+                    border-top: 1px solid #ededed;
+
+        }
     }
 
     .review-image {

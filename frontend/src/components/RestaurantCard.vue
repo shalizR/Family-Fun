@@ -1,7 +1,5 @@
 <template>
-    <div>
-        <div class="card">
-            <div class="card-content card-container" @click="handleRestaurantDetail">
+        <div class="card"  @click="handleRestaurantDetail">
                 <div class="media">
                     <div class="media-left">
                         <figure class="image is-64x64">
@@ -15,24 +13,22 @@
                 </div>
                 <div class="content content-container">
                     <div class="columns">
-                        <div class="column is-10">
-                            <p class="subtitle is-6">{{restaurant.street}}{{restaurant.ZIP}}, {{restaurant.city}}</p>
-                            <p class="subtitle is-6">{{restaurant.phone}}</p>
-                            <p class="subtitle is-6">{{restaurant.website}}</p>
-                        </div>
-                        <div class="column is-10">
-                            <p v-if="restaurant.kids_menu">Kids menu: Yes</p>
-                            <p v-else>Kids menu: No</p>
-                            <p v-if="restaurant.take_reservation">Take reservation: Yes</p>
-                            <p v-else>Take reservation: No</p>
-                            <p v-if="restaurant.credit_card">Accept credit cards: Yes</p>
-                            <p v-else>Accept credit cards: No</p>
+                        <!--<div class="column">-->
+                            <!--<p class="subtitle is-6">{{restaurant.street}}{{restaurant.ZIP}}, {{restaurant.city}}</p>-->
+                            <!--<p class="subtitle is-6">{{restaurant.phone}}</p>-->
+                            <!--<p class="subtitle is-6">{{restaurant.website}}</p>-->
+                        <!--</div>-->
+                        <div class="column">
+                            <p v-if="restaurant.kids_menu">Kids menu: <strong>Yes</strong></p>
+                            <p v-else>Kids menu: <strong>No</strong></p>
+                            <p v-if="restaurant.take_reservation">Take reservation: <strong>Yes</strong></p>
+                            <p v-else>Take reservation: <strong>No</strong></p>
+                            <p v-if="restaurant.credit_card">Accept credit cards: <strong>Yes</strong></p>
+                            <p v-else>Accept credit cards: <strong>No</strong></p>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
-    </div>
 </template>
 
 <script>
@@ -64,14 +60,13 @@
         width: auto !important;
     }
 
-    .card-container {
-        width: 400px;
+    .card {
         margin-bottom: 20px;
+        padding: 10px;
     }
 
     .content-container {
         /*display: flex;*/
-        width: 50%;
     }
 
 </style>

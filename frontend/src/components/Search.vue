@@ -1,6 +1,7 @@
 <template>
-    <div class="container search-container">
-        <div class="select">
+    <div class="container ">
+        <div class="search-container">
+                    <div class="select">
             <select v-model="category" @change="renderCategory(category)">
                 <option v-for="c in categories" :value="c" v-bind:key="c.key">
                     {{ c.name }}
@@ -13,6 +14,8 @@
         </div>
         <div>
             <lu-button @click="setSelectedSearch">Search</lu-button>
+        </div>
+
         </div>
     </div>
 </template>
@@ -63,8 +66,8 @@
 <style lang="scss" scoped>
     @import "~bulma";
 
-    .container {
-        margin: 20px 0;
+    .search-container {
+margin-bottom: 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -72,10 +75,6 @@
 
     .search-control {
         width: 75%;
-    }
-
-    .search-container {
-        margin: 20px auto;
     }
 
 </style>

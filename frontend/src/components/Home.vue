@@ -1,12 +1,16 @@
 <template>
-    <div class="container">
+    <div>
         <Search/>
-        <div class='columns is-multiline is-centered home-container'>
-            <div class="column is-4" v-for="restaurant in restaurants" v-bind:key="restaurant.id">
-                <restaurant-card :restaurant="restaurant"/>
+        <div class="container">
+
+            <div class='columns'>
+                <div class="column is-4" v-for="restaurant in restaurants" v-bind:key="restaurant.id">
+                    <restaurant-card :restaurant="restaurant"/>
+                </div>
+                <div v-if="!restaurants.length" class="column">Sorry, we couldn't find any content for search. Please try again!</div>
             </div>
-            <div v-if="!restaurants.length">Sorry, we couldn't find any content for search. Please try again! </div>
         </div>
+
     </div>
 </template>
 
@@ -21,7 +25,8 @@
 
         components: {
             Search,
-            RestaurantCard},
+            RestaurantCard
+        },
 
         computed: {
             ...mapState('search', [
@@ -34,15 +39,14 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     @import "~bulma";
-    .home-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        max-width: 1600px ;
-        margin: 0 auto;
 
+    * {
+        box-sizing: border-box;
     }
 
+    .columns {
+        flex-wrap: wrap;
+    }
 </style>

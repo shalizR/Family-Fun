@@ -1,5 +1,7 @@
 <template>
-    <div class="new-review-container">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-8 is-offset-2">
         <div>
             <h1 class="title new-review-title">Add A Review</h1>
             <div class="field">
@@ -111,6 +113,9 @@
         </div>
         <div class="new-review-submit">
             <lu-button class="new-review-button" @click="handleSubmit">Submit</lu-button>
+        </div>
+
+            </div>
         </div>
     </div>
 </template>

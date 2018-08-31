@@ -10,10 +10,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .button {
     background-color: #ffaf24;
     border-color: #ffaf24;
     color: white;
+    &:hover {
+      color: white;
+    }
   }
 </style>

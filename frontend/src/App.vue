@@ -31,5 +31,10 @@ export default {
 }
   body {
     margin: 0;
+    font-size: 100%;
   }
+  a,p,address {
+    font-size: 16px;
+  }
+  h1 {}
 </style>
