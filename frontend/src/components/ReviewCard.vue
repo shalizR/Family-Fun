@@ -89,12 +89,7 @@
             randomCounter() {
                 return this.review.opinions.filter(o => o.random === true).length
             },
-            },
-        // updated () {
-        //     this.$store.dispatch('reviewDetail/deleteReview', this.id)
-        //
-        //     },
-
+        },
         methods: {
             formatDate(date) {
                 return moment(date).format('DD/MM/YYYY')
